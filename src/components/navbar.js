@@ -35,7 +35,7 @@ const Navbar = () => {
   const menuItems = [
     { key: "home", path: "/", text: t("menu.home") },
     { key: "about", path: "/about-us", text: t("menu.about") },
-    { key: "services", path: "/services", text: t("menu.services") },
+    { key: "our packages", path: "/our-packages", text: t("menu.services") },
     { key: "gallery", path: "/gallery", text: t("menu.gallery") },
     { key: "contact", path: "/contact-us", text: t("menu.contact") },
   ];

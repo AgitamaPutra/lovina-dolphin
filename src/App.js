@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { I18nProvider } from "./context/I18context";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
+import AboutUs from "./pages/AboutUs";
+import { OurServices } from "./pages/OurServices";
+import { Gallery } from "./pages/Gallery";
+import ContactUs from "./pages/ContactUs";
+import { Layout } from "./pages/Layout";
+import { DetailPackage } from "./pages/DetailPackage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <I18nProvider>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/services" element={<OurServices />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/services/:id" element={<DetailPackage />} />
+          </Routes>
+        </Layout>
+      </I18nProvider>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

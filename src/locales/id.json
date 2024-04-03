@@ -1,0 +1,137 @@
+{
+  "menu": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan Kami",
+    "gallery": "Galeri",
+    "contact": "Hubungi Kami"
+  },
+  "greeting": "Halo, dunia!",
+  "welcome": "Selamat datang di aplikasi saya!",
+  "description": "Selalu menakjubkan melihat beberapa tempat baru dan Nusa Penida akan membuat Anda terpesona untuk tinggal lebih lama. Dolphin Snorkeling Penida adalah pilihan terbaik untuk liburan Anda ke Pulau Nusa Penida. Kami akan mengajak Anda mengunjungi tempat-tempat unik dan baru.",
+  "headerHome": "TUR LUMBA-LUMBA PRIBADI LOVINA",
+  "heroTextHome": "Rasakan Keajaiban Laut dengan Tur Lumba-Lumba Lovina Bali.",
+  "buttonHome": "HUBUNGI KAMI",
+  "contact": {
+    "headerContactUs": "HUBUNGI KAMI",
+    "textContact": "Temukan petualangan menyelam di Lovina, Bali, hubungi kami sekarang!",
+    "paragContact": "Benamkan diri Anda dalam keindahan dunia bawah laut Lovina dengan tur menyelam kami yang luar biasa. Jelajahi terumbu karang yang indah, temui kehidupan laut yang menakjubkan, dan ciptakan kenangan tak terlupakan di bawah ombak. Pemandu ahli kami memastikan pengalaman yang aman dan menyenangkan bagi penyelam dari semua tingkatan. Hubungi kami hari ini untuk memulai petualangan yang akan membuat Anda terengah-engah!",
+    "buttonContact": "Temukan Kami"
+  },
+  "about": {
+    "headerAbout": "TENTANG KAMI",
+    "textAbout": "Rasakan petualangan ramah lingkungan dengan Lovina Dolphin Tours."
+  },
+  "aboutLovina" : {
+    "title": "Tentang Lovina, Bali",
+    "p1": "Selamat datang di Lovina, Bali, tempat di mana keindahan alam bawah laut dan pertunjukan lumba-lumba yang menakjubkan menjadi daya tarik utama. Di sini, para pengunjung dapat merasakan keajaiban alam saat mereka menyaksikan gerombolan lumba-lumba yang bermain riang di perairan sekitar Lovina. Pengalaman menonton lumba-lumba di Lovina tidak hanya menyenangkan, tetapi juga memberikan pemahaman yang lebih dalam tentang kehidupan laut yang luar biasa.",
+    "p2" : "Tak hanya itu, destinasi ini juga menyuguhkan petualangan snorkeling yang memukau di terumbu karang yang indah. Dengan mengapung di atas air, pengunjung dapat memasuki dunia bawah laut yang berwarna-warni dan penuh kehidupan, menyaksikan ikan-ikan berenang di antara terumbu karang yang menakjubkan. Lovina, dengan keindahan alamnya yang memikat dan aktivitas menariknya, adalah surga bagi para pecinta alam dan penggemar petualangan di Bali.",
+    "button": "Hubungi Kami"
+  },
+  "needHelp" : "Butuh Bantuan?",
+  "packageBtn": "Baca Selengkapnya",
+  "data": [
+    {
+      "id": 1,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title" :"Paket I. Lumba - Lumba", "desc": "Pengalaman Tak Terlupakan Melihat Lumba-lumba"} ,
+      "price": 300000,
+      "added" : 70000,
+      "personAndAdditional" : {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 70.000 per orang akan dikenakan untuk setiap peserta tambahan.",
+      "etc": "Ekstra 70K / Orang, jika lebih dari 4 orang"},
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Anda akan diajak untuk menjelajahi perairan yang luas dan menikmati momen langka melihat lumba-lumba berenang bebas di alam liar."},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Anda akan didampingi oleh seorang kapten berpengalaman yang akan membawa Anda ke lokasi-lokasi terbaik untuk melihat lumba-lumba."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."}
+      ]
+    },
+    {
+      "id": 2,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title" : "Paket II. Lumba - Lumba + Berenang", "desc": "Pengalaman Berenang Bersama Lumba-lumba"} ,
+      "price": 400000,
+      "added" : 175000,
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp. 175.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Anda akan diajak untuk menikmati momen luar biasa berenang bersama lumba-lumba di perairan yang jernih dan alami."},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Anda akan didampingi oleh seorang kapten berpengalaman yang akan membawa Anda ke lokasi-lokasi terbaik untuk melihat lumba-lumba dan berenang di perairan yang jernih."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."}
+      ]
+    },
+    {
+      "id": 3,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title": "Paket III. Lumba - Lumba + Snorkling", "desc": "Petualangan Seru di Bawah Laut"} ,
+      "price": 400000,
+      "added" : 175000,
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 175.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Nikmati petualangan seru di bawah laut dengan kegiatan snorkeling yang menarik."},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Anda akan didampingi oleh seorang kapten berpengalaman yang akan membawa Anda ke lokasi-lokasi terbaik untuk melihat lumba-lumba dan snorkeling di perairan yang indah."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."},
+        {"title": "Alat Snorkeling", "description": "Jelajahi kehidupan bawah laut dengan menggunakan alat snorkeling yang kami sediakan untuk Anda."},
+        {"title": "Roti untuk Ikan", "description": "Nikmati momen istimewa memberi makan ikan di perairan terbuka."}
+      ]
+    },
+    {
+      "id": 4,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title": "Paket IV. Lumba - Lumba, Berenang, Snorkling", "desc": "Petualangan Seru Lengkap di Laut"} ,
+      "price": 500000,
+      "added" : 225000,
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 225.000 per orang akan dikenakan untuk setiap peserta tambahan."},
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Nikmati petualangan seru lengkap di laut dengan kegiatan berenang dan snorkeling yang menarik."},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Anda akan didampingi oleh seorang kapten berpengalaman yang akan membawa Anda ke lokasi-lokasi terbaik untuk melihat lumba-lumba dan melakukan aktivitas berenang serta snorkeling di perairan yang indah."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."},
+        {"title": "Alat Snorkeling", "description": "Jelajahi kehidupan bawah laut dengan menggunakan alat snorkeling yang kami sediakan untuk Anda."},
+        {"title": "Roti untuk Ikan", "description": "Nikmati momen istimewa memberi makan ikan di perairan terbuka."}
+      ]
+    },
+    {
+      "id": 5,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title": "Paket V. Lumba Lumba + Taman Laut", "desc": "Petualangan Seru di Laut dan Taman Laut"} ,
+      "price": 100000,
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca."},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Anda akan didampingi oleh seorang kapten berpengalaman yang akan membawa Anda mengelilingi perairan dan taman laut yang menakjubkan."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."},
+        {"title": "Alat Snorkeling", "description": "Jelajahi kehidupan bawah laut dengan menggunakan alat snorkeling yang kami sediakan untuk Anda."},
+        {"title": "Roti untuk Ikan", "description": "Nikmati momen istimewa memberi makan ikan di perairan terbuka."}
+      ]
+    },
+    {
+      "id": 6,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {"title": "Paket VI. Fishing Trip Lovina", "desc": " Petualangan Memancing Malam dan Siang di Lovina"},
+      "price": "Rp 500.000 per Boat",
+      "duration": {"title": "Durasi dan Kegiatan", "desc": "12 Jam Malam atau 5 Jam Siang"},
+      "fas": "Fasilitas",
+      "facility": [
+        {"title": "Boat + Kapten", "description": "Nikmati pengalaman memancing yang menyenangkan dengan bantuan seorang kapten berpengalaman yang akan membawa Anda ke lokasi-lokasi terbaik untuk menangkap ikan."},
+        {"title": "Life Jacket", "description": "Keselamatan Anda adalah prioritas utama kami. Setiap peserta akan diberikan jaket pelampung untuk memastikan keselamatan di atas air."},
+        {"title": "Air Mineral", "description": "Agar Anda tetap terhidrasi selama petualangan, kami menyediakan air mineral segar untuk dinikmati selama perjalanan."}
+      ]
+    }
+  ],
+  "form" : {
+    "name" : "Nama",
+    "phone" : "Nomor Handphone",
+    "package": "Paket Tour",
+    "pax" : "Tambah Penumpang",
+    "price": "Harga",
+    "date": "Tanggal",
+    "country" : "Negara"
+  }
+}

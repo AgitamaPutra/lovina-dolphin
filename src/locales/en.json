@@ -1,0 +1,184 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "gallery": "Gallery",
+    "contact": "Contact Us"
+  },
+  "greeting": "Hello, world!",
+  "welcome": "Welcome to my app!",
+  "description": "Always see some new places and the stunning Nusa Penida will enchant you to stay longer. Dolphin Snorkeling Penida is the best choice for your holiday to Nusa Penida Island. We will take you to visit unique and new places.",
+  "headerHome": "LOVINA PRIVATE DOLPHIN TOUR",
+  "heroTextHome": "Experience the Magic of the Sea with the Lovina Bali Dolphin Tour.",
+  "buttonHome": "CONTACT US",
+  "contact": {
+    "headerContactUs": "CONTACT US",
+    "textContact": "Discover diving adventures in Lovina, Bali, contact us now!",
+    "paragContact": "Immerse yourself in the beauty of Lovina's underwater world with our extraordinary diving tours. Explore vibrant coral reefs, encounter majestic marine life, and create unforgettable memories beneath the waves. Our expert guides ensure a safe and exhilarating experience for divers of all levels. Contact us today to embark on an adventure that will leave you breathless!",
+    "buttonContact": "Find Us"
+  },
+  "about": {
+    "headerAbout": "ABOUT US",
+    "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours."
+  },
+"aboutLovina": {
+"title": "About Lovina, Bali",
+"p1": "Welcome to Lovina, Bali, where the beauty of underwater world and the stunning dolphin shows are the main attractions. Here, visitors can experience the marvels of nature as they witness the playful pods of dolphins frolicking in the waters around Lovina. The experience of watching dolphins in Lovina is not only enjoyable but also provides a deeper understanding of the extraordinary marine life.",
+"p2": "But that's not all; this destination also offers breathtaking snorkeling adventures amidst the beautiful coral reefs. Floating above the water, visitors can enter a colorful and vibrant underwater world, witnessing fishes swimming among the stunning coral reefs. Lovina, with its captivating natural beauty and exciting activities, is a paradise for nature lovers and adventure enthusiasts in Bali.",
+"button": "Contact Us"
+},
+"needHelp" : "Need Help?",
+   "packageBtn": "Read More",
+  "data": [
+    {
+      "id": 1,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {
+        "title": "Package I. Dolphin:",
+        "desc": "Unforgettable Dolphin Watching Experience"
+      },
+      "price": 300000,
+      "added": 70000,
+      "personAndAdditional": {
+        "tittle": "Passenger and Additional",
+        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 70,000 per person will be charged for each additional participant.",
+        "etc": "Extra 70K / Person, if more than 4 people"
+      },
+      "duration": {
+        "title": "Duration And Activities",
+        "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. You will be taken to explore wide waters and enjoy rare moments watching dolphins swim freely in the wild."
+      },
+      "fas": "Facilitys",
+      "facility": [
+        {"title": "Boat + Captain", "description": "You will be accompanied by an experienced captain who will take you to the best locations to see dolphins."},
+        {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+        {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."}
+      ]
+    },
+    {
+      "id": 2,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {
+        "title": "Package II. Dolphin + Swimming:",
+        "desc": "Swimming Experience with Dolphins"
+      },
+      "price": 400000,
+      "added": 175000,
+      "personAndAdditional": {
+        "tittle": "Passenger and Additional",
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
+      },
+      "duration": {
+        "title": "Duration And Activities",
+        "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. You will be taken to explore wide waters and enjoy rare moments watching dolphins swim freely in the wild."
+      },
+      "fas": "Facilitys",
+      "facility": [
+        {"title": "Boat + Captain", "description": "You will be accompanied by an experienced captain who will take you to the best locations to see dolphins and swim in clear waters."},
+        {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+        {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."}
+      ]
+    },
+    {
+      "id": 3,
+      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "name": {
+        "title": "Package III. Dolphin + Snorkeling:",
+        "desc": "Exciting Underwater Adventure"
+      },
+      "price": 400000,
+      "added": 175000,
+      "personAndAdditional": {
+        "tittle": "Passenger and Additional",
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
+      },
+      "duration": {
+        "title": "Duration And Activities",
+        "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. You will be taken to explore wide waters, snorkel in vibrant coral reefs, and encounter various marine species."
+      },
+      "fas": "Facilitys",
+      "facility": [
+        {"title": "Boat + Captain", "description": "You will be accompanied by an experienced captain who will take you to the best locations to see dolphins and snorkel in beautiful underwater spots."},
+        {"title": "Snorkeling Equipment", "description": "We provide high-quality snorkeling equipment, including masks and fins, for you to explore the underwater world comfortably."},
+        {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+        {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."}
+      ]
+    },
+    {
+  "id": 4,
+  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "name": {
+    "title": "Package IV. Dolphin, Swimming, Snorkeling",
+    "desc": "Complete Exciting Sea Adventure"
+  },
+  "price": 500000,
+  "added": 225000,
+  "personAndAdditional": {
+    "tittle": "Passenger and Additional",
+    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 225,000 per person will be charged for each additional participant."
+  },
+  "duration": {
+    "title": "Duration And Activities",
+    "desc": "The duration of the trip ranges from 3 to 5 hours, depending on the activities of the dolphins and the weather. Enjoy a complete exciting sea adventure with swimming and snorkeling activities."
+  },
+  "fas": "Facilities",
+  "facility": [
+    {"title": "Boat + Captain", "description": "You will be accompanied by an experienced captain who will take you to the best locations for dolphin watching and engaging in swimming and snorkeling activities in beautiful waters."},
+    {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+    {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."},
+    {"title": "Snorkeling Equipment", "description": "Explore the underwater world comfortably with high-quality snorkeling equipment, including masks and fins."},
+    {"title": "Fish Bread", "description": "Enjoy special moments feeding fish in open waters."}
+  ]
+},
+{
+  "id": 5,
+  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "name": {
+    "title": "Package V. Dolphin + Marine Park",
+    "desc": "Exciting Sea and Marine Park Adventure"
+  },
+  "price": 100000,
+  "duration": {
+    "title": "Duration And Activities",
+    "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. Experience an exciting adventure at sea and in the marine park."
+  },
+  "fas": "Facilities",
+  "facility": [
+    {"title": "Boat + Captain", "description": "You will be accompanied by an experienced captain who will take you on a tour of the stunning waters and marine park."},
+    {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+    {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."},
+    {"title": "Snorkeling Equipment", "description": "Explore the underwater world comfortably with high-quality snorkeling equipment, including masks and fins."},
+    {"title": "Fish Bread", "description": "Enjoy special moments feeding fish in open waters."}
+  ]
+},
+{
+  "id": 6,
+  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "name": {
+    "title": "Package VI. Fishing Trip Lovina",
+    "desc": "Exciting Day and Night Fishing Adventure in Lovina"
+  },
+  "price": 500000,
+  "duration": {
+    "title": "Duration And Activities",
+    "desc": "12 Hours Night or 5 Hours Day"
+  },
+  "fas": "Facilities",
+  "facility": [
+    {"title": "Boat + Captain", "description": "Enjoy a fun fishing experience with the assistance of an experienced captain who will take you to the best locations for fishing."},
+    {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
+    {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."}
+  ]
+}
+  ],
+  "form": {
+"name": "Name",
+"phone": "Phone Number",
+"package": "Tour Package",
+"pax": "Add Pax (If Needed)",
+"price": "Price",
+"date": "Date",
+"country": "Country"
+}
+}

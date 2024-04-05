@@ -5,7 +5,7 @@ import { Review } from "../components/Review";
 import Hero from "../components/Hero";
 import { Poster } from "../components/Poster";
 import AboutLovina from "../components/AboutLovina";
-
+import Image from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg";
 export const Home = () => {
   const { t } = useTranslation(); // gunakan hook useTranslation
 
@@ -19,6 +19,7 @@ export const Home = () => {
         }
         button={t("buttonHome")}
         showButton={true}
+        image={Image}
       />
       <Poster />
       <AboutLovina />

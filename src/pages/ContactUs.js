@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
+import Image from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
 const ContactUs = () => {
   // Fungsi untuk membuka WhatsApp di halaman baru dengan nomor dan pesan yang ditentukan
   const handleWhatsAppClick = () => {
@@ -15,7 +15,7 @@ const ContactUs = () => {
     window.open(whatsappURL, "_blank");
   };
   const handleFindUsClick = () => {
-    window.open("https://maps.app.goo.gl/eQLYyWQPfBnStjf29");
+    window.open("https://maps.app.goo.gl/MFzD2qVa6geoYLy38");
   };
   const { t } = useTranslation();
   return (
@@ -26,13 +26,14 @@ const ContactUs = () => {
         style={
           "font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
         }
+        image={Image}
       />
       <div className="bg-gray-100 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-0">
             <div>
               <MapContainer
-                center={[-8.1619, 115.0298]} // Koordinat Lovina, Bali
+                center={[-8.1624, 115.0247]} // Koordinat Krisna Water Sports, Bali
                 zoom={13}
                 style={{
                   height: "400px",
@@ -42,11 +43,10 @@ const ContactUs = () => {
                 }}
               >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position={[-8.1619, 115.0298]}>
-                  <Popup>Lovina, Bali</Popup>
+                <Marker position={[-8.1624, 115.0247]}>
+                  <Popup>Krisna Water Sports, Bali</Popup>
                 </Marker>
               </MapContainer>
-              {/* Tombol "Find Us" */}
             </div>
             <div className="flex flex-col ">
               <p className="text-lg leading-relaxed text-justify">
@@ -65,7 +65,7 @@ const ContactUs = () => {
               </p>
               <p className="text-lg leading-relaxed mb-4">
                 <FaMapMarkerAlt className="inline-block mr-4 text-2xl" />
-                Jalan Lovina, Buleleng, Bali
+                Krisna Water Sports, Temukus, Singaraja Buleleng
               </p>
               <div className="text-center mt-4">
                 <button

@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
-
+import Image from "../asset/weddings-art-commercial.jpg";
 const AboutUs = () => {
   const { t } = useTranslation();
   return (
@@ -12,6 +12,7 @@ const AboutUs = () => {
         style={
           "font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
         }
+        image={Image}
       />
       <div className="bg-gray-100 py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

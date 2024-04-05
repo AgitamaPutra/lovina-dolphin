@@ -100,7 +100,9 @@ const Navbar = () => {
                 {item.text}
               </Link>
             ))}
-            <LanguageSelector />
+            <div className="flex justify-center items-center">
+              <LanguageSelector />
+            </div>
           </div>
         )}
       </div>

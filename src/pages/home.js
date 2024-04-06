@@ -8,7 +8,14 @@ import AboutLovina from "../components/AboutLovina";
 import Image from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg";
 export const Home = () => {
   const { t } = useTranslation(); // gunakan hook useTranslation
-
+  const handleClickWa = () => {
+    const phoneNumber = "6281998348555"; // Nomor WhatsApp
+    const message = "Halo Awix, Saya ingin booking packages!"; // Pesan yang ingin dikirim
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <div>
       <Hero
@@ -20,6 +27,7 @@ export const Home = () => {
         button={t("buttonHome")}
         showButton={true}
         image={Image}
+        fungsi={handleClickWa}
       />
       <Poster />
       <AboutLovina />

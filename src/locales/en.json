@@ -22,6 +22,10 @@
     "headerAbout": "ABOUT US",
     "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours."
   },
+    "gellery": {
+    "headerGallery": "OUR GALLERY",
+    "textGallery": "Explore Our Gallery Collection"
+  },
 "aboutLovina": {
 "title": "About Lovina, Bali",
 "p1": "Welcome to Lovina, Bali, where the beauty of underwater world and the stunning dolphin shows are the main attractions. Here, visitors can experience the marvels of nature as they witness the playful pods of dolphins frolicking in the waters around Lovina. The experience of watching dolphins in Lovina is not only enjoyable but also provides a deeper understanding of the extraordinary marine life.",
@@ -39,7 +43,7 @@
         "desc": "Unforgettable Dolphin Watching Experience"
       },
       "price": 300000,
-      "added": 70000,
+      "added": 100000,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
         "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 70,000 per person will be charged for each additional participant.",

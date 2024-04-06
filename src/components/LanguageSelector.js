@@ -15,15 +15,15 @@ const LanguageSelector = () => {
       onChange={handleLanguageChange}
       defaultValue="en"
       style={{
-        width: 150,
+        width: 175,
         borderRadius: "0.375rem",
       }}
     >
       <Option value="en">
-        <div className="flex items-center">English</div>
+        <div className="flex items-center text-lg">English</div>
       </Option>
       <Option value="id">
-        <div className="flex items-center">Bahasa Indonesia</div>
+        <div className="flex items-center text-lg">Bahasa Indonesia</div>
       </Option>
     </Select>
   );

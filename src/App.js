@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import AboutUs from "./pages/AboutUs";
 import { OurServices } from "./pages/OurServices";
-import { Gallery } from "./pages/Gallery";
+import Gallery  from "./pages/Gallery";
 import ContactUs from "./pages/ContactUs";
 import { Layout } from "./pages/Layout";
 import { DetailPackage } from "./pages/DetailPackage";

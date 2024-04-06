@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 import { I18nContext } from "../context/I18context";
 import LanguageSelector from "./LanguageSelector";
 import Logo from "../asset/Dolphin_Logo.png";
+import { IoClose } from "react-icons/io5";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -43,17 +46,19 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-gray-800 shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-24">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-20 md:h-24">
         <div>
-          <img src={Logo} alt="Logo" className="h-20" />
+          <Link to={'/'}>
+            <img src={Logo} alt="Logo" className="h-16 md:h-20" />
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             <svg
-              className={`h-6 w-6 ${isScrolled ? "text-black" : "text-white"}`}
+              className={`h-6 w-6 ${isScrolled ? "text-white " : "text-white"}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke={isScrolled ? "currentColor" : "white"}
@@ -76,7 +81,7 @@ const Navbar = () => {
                 isScrolled
                   ? location.pathname === item.path
                     ? "text-white bg-blue-700"
-                    : "text-black hover:bg-blue-700 hover:text-white"
+                    : "text-white hover:bg-blue-700 hover:text-white "
                   : location.pathname === item.path
                   ? "text-white bg-blue-700"
                   : "text-white hover:bg-blue-700 hover:text-white"
@@ -88,23 +93,43 @@ const Navbar = () => {
           ))}
           <LanguageSelector />
         </div>
-        {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-blue-800 text-white py-2 z-50">
-            {menuItems.map((item) => (
-              <Link
-                key={item.key}
-                to={item.path}
-                className="block text-center py-2 hover:bg-blue-700 hover:text-white transition-colors"
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.3 }}
+              className="fixed left-0 top-0 right-0 bottom-0 flex justify-center items-center z-50 h-screen bg-gray-800"
+            >
+              <button
+                className="absolute top-0 right-0 pt-5 pr-3 focus:outline-none text-white"
                 onClick={closeMenu}
               >
-                {item.text}
-              </Link>
-            ))}
-            <div className="flex justify-center items-center">
-              <LanguageSelector />
-            </div>
-          </div>
-        )}
+                <IoClose className="h-8 w-8" />
+              </button>
+              <div className="w-full md:max-w-md p-4  text-white relative">
+                {menuItems.map((item, index) => (
+                  <Link
+                    key={item.key}
+                    to={item.path}
+                    className={`block text-center py-2 hover:bg-blue-700 hover:text-white transition-colors ${
+                      index !== menuItems.length - 0
+                        ? "border-b-[1px] border-solid border-white mx-20"
+                        : ""
+                    }`}
+                    onClick={closeMenu}
+                  >
+                    {item.text}
+                  </Link>
+                ))}
+                <div className="flex justify-center items-center mt-4 bg-transparent">
+                  <LanguageSelector />
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );

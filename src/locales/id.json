@@ -22,6 +22,10 @@
     "headerAbout": "TENTANG KAMI",
     "textAbout": "Rasakan petualangan ramah lingkungan dengan Lovina Dolphin Tours."
   },
+    "gellery": {
+    "headerGallery": "GALERI KAMI",
+    "textGallery": "Jelajahi Koleksi Galeri Kami"
+  },
   "aboutLovina" : {
     "title": "Tentang Lovina, Bali",
     "p1": "Selamat datang di Lovina, Bali, tempat di mana keindahan alam bawah laut dan pertunjukan lumba-lumba yang menakjubkan menjadi daya tarik utama. Di sini, para pengunjung dapat merasakan keajaiban alam saat mereka menyaksikan gerombolan lumba-lumba yang bermain riang di perairan sekitar Lovina. Pengalaman menonton lumba-lumba di Lovina tidak hanya menyenangkan, tetapi juga memberikan pemahaman yang lebih dalam tentang kehidupan laut yang luar biasa.",
@@ -36,7 +40,7 @@
       "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title" :"Paket I. Lumba - Lumba", "desc": "Pengalaman Tak Terlupakan Melihat Lumba-lumba"} ,
       "price": 300000,
-      "added" : 70000,
+      "added" : 100000,
       "personAndAdditional" : {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 70.000 per orang akan dikenakan untuk setiap peserta tambahan.",
       "etc": "Ekstra 70K / Orang, jika lebih dari 4 orang"},
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Anda akan diajak untuk menjelajahi perairan yang luas dan menikmati momen langka melihat lumba-lumba berenang bebas di alam liar."},

@@ -15,8 +15,8 @@ export const Bantuan = () => {
   };
   return (
     <div className="fixed bottom-0 right-0  p-4 rounded-lg flex items-center font-manrope">
-      <span className="px-2 py-1 bg-white rounded-lg font-bold mr-2 drop-shadow-md shadow-md text-sm md:text-lg">
-        {t('needHelp')}
+      <span className="px-2 py-1 bg-white rounded-lg font-bold mr-2 drop-shadow-md shadow-md text-sm md:text-normal">
+        {t("needHelp")}
       </span>
 
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -24,7 +24,7 @@ export const Bantuan = () => {
           className="bg-green-500 rounded-full p-1.5 hover:drop-shadow-lg hover:shadow-lg text-xl hover:text-2xl"
           onClick={handleClickWa}
         >
-          <FaWhatsapp size={52} className="text-white" />
+          <FaWhatsapp size={44} className="text-white" />
         </div>
       </motion.button>
     </div>

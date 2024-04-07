@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Card } from "antd";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -8,50 +8,60 @@ import { motion, useAnimation } from "framer-motion";
 export const Packages = () => {
   const { t, i18n } = useTranslation();
   const data = require(`../locales/${i18n.language}.json`);
-
   const controls = useAnimation();
   const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const refElement = ref.current;
+
     const onScroll = () => {
       if (refElement) {
         const top = refElement.getBoundingClientRect().top;
+        const bottom = refElement.getBoundingClientRect().bottom;
         const windowHeight = window.innerHeight;
-        if (top < windowHeight * 0.8) {
-          controls.start({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.5 },
-          });
+
+        // When the element is in view
+        if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
+          setIsVisible(true);
         } else {
-          controls.start({
-            opacity: 0,
-            x: -100,
-          });
+          setIsVisible(false);
         }
       }
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [controls]);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5 },
+      });
+    } else {
+      controls.start({
+        opacity: 0,
+        y: 50,
+      });
+    }
+  }, [isVisible, controls]);
 
   return (
     <div className="bg-gradient-to-b bg-white">
-      <div className="max-w-7xl w-full mx-auto px-4 py-8">
+      <div className="max-w-7xl w-full mx-auto px-4 py-8" ref={ref}>
         <motion.h1
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={controls}
-          className="text-3xl font-bold mt-14 text-center"
+          className="text-3xl font-bold mb-10 text-center"
         >
           ☆ {t("AWIX LOVINA PRIVATE DOLPHIN TOUR")} ☆
         </motion.h1>
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={controls}
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          ref={ref}
+          animate={controls}
         >
           {data.data.slice(0, 3).map((item, index) => (
             <Link
@@ -60,20 +70,17 @@ export const Packages = () => {
               className="focus:outline-none"
             >
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  transition: { delay: index * 3, duration: 3 },
-                }}
+                key={item.id}
                 className="mb-4"
+                initial={{ opacity: 0, y: 50 }}
+                animate={controls}
+                transition={{ delay: index * 0.2 }}
               >
                 <Card
                   hoverable
                   cover={<img alt="Lovina Dolphin" src={item.img[index + 1]} />}
                   className="mb-4 cursor-pointer"
                   style={{ transition: "transform 0.3s ease-in-out" }}
-                  whileHover={{ scale: 1.05 }}
                 >
                   <div>
                     <p className="font-bold text-xl mb-2 text-center">

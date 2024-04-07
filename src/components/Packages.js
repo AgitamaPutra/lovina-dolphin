@@ -53,7 +53,7 @@ export const Packages = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
           ref={ref}
         >
-          {data.data.map((item) => (
+          {data.data.slice(0, 3).map((item, index) => (
             <Link
               key={item.id}
               to={`services/${item.id}`}
@@ -61,15 +61,19 @@ export const Packages = () => {
             >
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
-                animate={controls}
-                transition={{ duration: 0.5 }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { delay: index * 3, duration: 3 },
+                }}
                 className="mb-4"
               >
                 <Card
                   hoverable
-                  cover={<img alt="example" src={item.img[0]} />}
-                  className="mb-4 transform hover:-translate-y-1 cursor-pointer"
+                  cover={<img alt="Lovina Dolphin" src={item.img[index + 1]} />}
+                  className="mb-4 cursor-pointer"
                   style={{ transition: "transform 0.3s ease-in-out" }}
+                  whileHover={{ scale: 1.05 }}
                 >
                   <div>
                     <p className="font-bold text-xl mb-2 text-center">
@@ -95,6 +99,14 @@ export const Packages = () => {
             </Link>
           ))}
         </motion.div>
+        <div className="text-center">
+          <Link
+            to="/packages"
+            className="text-blue-500 hover:text-blue-700 font-bold"
+          >
+            See More Packages
+          </Link>
+        </div>
       </div>
     </div>
   );

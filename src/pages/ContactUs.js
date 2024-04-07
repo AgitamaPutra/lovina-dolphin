@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Image from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
+import { Helmet } from "react-helmet";
 const ContactUs = () => {
   // Fungsi untuk membuka WhatsApp di halaman baru dengan nomor dan pesan yang ditentukan
   const handleWhatsAppClick = () => {
@@ -20,6 +21,9 @@ const ContactUs = () => {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
       <Hero
         header={t("contact.headerContactUs")}
         text={t("contact.textContact")}

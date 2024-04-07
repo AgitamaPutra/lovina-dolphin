@@ -10,6 +10,7 @@ import Image3 from "../asset/weddings-art-commercial.webp";
 import Image4 from "../asset/shooting-underwater.webp";
 import { Image } from "antd";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // Import icons
+import { Helmet } from "react-helmet";
 
 const Gallery = () => {
   const { t } = useTranslation();
@@ -36,6 +37,9 @@ const Gallery = () => {
 
   return (
     <div className="bg_dark">
+      <Helmet>
+        <title>Our Gallery</title>
+      </Helmet>
       <Hero
         header={t("gallery.headerGallery")}
         text={t("gallery.textGallery")}

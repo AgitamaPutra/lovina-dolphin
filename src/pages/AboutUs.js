@@ -2,10 +2,14 @@ import React from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
 import Image from "../asset/weddings-art-commercial.webp";
+import { Helmet } from "react-helmet";
 const AboutUs = () => {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <Hero
         header={t("about.headerAbout")}
         text={t("about.textAbout")}

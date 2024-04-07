@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
 
 export const OurServices = () => {
   return (
-    <div>OurServices</div>
-  )
-}
+    <div>
+      <Helmet>
+        <title>Our Packages</title>
+      </Helmet>
+    </div>
+  );
+};

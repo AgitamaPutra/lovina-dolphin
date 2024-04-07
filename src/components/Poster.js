@@ -2,11 +2,12 @@ import React, { useRef, useEffect } from "react";
 import Flyer from "../asset/Poster.png";
 import { Image } from "antd";
 import { motion, useAnimation } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Poster = () => {
   const controls = useAnimation();
   const ref = useRef();
-
+  const { t } = useTranslation(); // Get translation function and i18n instance
   useEffect(() => {
     const refElement = ref.current;
     const onScroll = () => {
@@ -59,19 +60,16 @@ export const Poster = () => {
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
-          className="text-lg mb-4"
+          className="text-lg mb-4 text-justify"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et ex
-          nec metus vehicula scelerisque. Duis sit amet justo nec nisi pulvinar
-          lobortis. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas.
+          {t("poster.text")}
         </motion.p>
         <motion.button
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
         >
-          Aksi
+          {t("needHelp")}
         </motion.button>
       </div>
     </div>

@@ -60,9 +60,11 @@ const AboutLovina = () => {
           <h2 className="text-3xl font-bold mb-4">{t("aboutLovina.title")}</h2>
           <p className="text-lg mb-4 text-justify">{t("aboutLovina.p1")}</p>
           <p className="text-lg mb-4 text-justify">{t("aboutLovina.p2")}</p>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-            {t("aboutLovina.button")}
-          </button>
+          <div className="flex justify-center items-center">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+              {t("aboutLovina.button")}
+            </button>
+          </div>
         </div>
         {/* Gambar di kanan */}
         <motion.div className="md:order-2 overflow-visible">

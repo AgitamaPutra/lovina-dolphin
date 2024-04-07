@@ -106,10 +106,10 @@ export const Packages = () => {
             </Link>
           ))}
         </motion.div>
-        <div className="text-center">
+        <div className="text-center mt-2">
           <Link
             to="/packages"
-            className="text-blue-500 hover:text-blue-700 font-bold"
+            className="text-blue-500 hover:text-blue-700 font-bold text-lg "
           >
             See More Packages
           </Link>

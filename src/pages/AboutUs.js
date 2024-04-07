@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
-import Image from "../asset/weddings-art-commercial.webp";
+import Image from "../asset/kadek-sutawa-RVCIXnsn3IE-unsplash.jpg";
 import { Helmet } from "react-helmet";
+import { motion, useAnimation } from "framer-motion";
+import Image2 from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
 const AboutUs = () => {
+  const controls = useAnimation();
+  const ref = useRef();
+
+  useEffect(() => {
+    const refElement = ref.current;
+
+    const onScroll = () => {
+      if (refElement) {
+        const top = refElement.getBoundingClientRect().top;
+        const bottom = refElement.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        // When the element is in view
+        if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
+          controls.start({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          });
+        } else {
+          controls.start({
+            opacity: 0,
+            y: 50,
+          });
+        }
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [controls]);
+
   const { t } = useTranslation();
   return (
     <div>
@@ -18,44 +52,50 @@ const AboutUs = () => {
         }
         image={Image}
       />
-      <div className="bg-gray-100 py-16">
+      <motion.div
+        className="bg-gray-100 py-10"
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        ref={ref}
+      >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-8">
-            About Us
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">
+            <strong>Lovina Private Dolphin Tour</strong>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <img
-                src="https://via.placeholder.com/600x400"
-                alt="About Us Image"
+                src={Image2}
+                alt="Lovina Private Dolphin Tour"
                 className="rounded-lg shadow-lg"
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                consectetur risus a libero pretium, sit amet varius mi
-                consectetur. Sed feugiat, dolor sed sollicitudin fringilla, elit
-                libero ultrices quam, nec gravida quam magna in est. Phasellus
-                quis sem ut velit volutpat consequat. Cras vestibulum, elit ac
-                efficitur mollis, elit lorem tincidunt magna, eu facilisis dui
-                quam et metus. Curabitur id erat sed eros tincidunt cursus.
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                <strong>Lovina Dolphin Private Tour</strong> adalah penyedia
+                layanan tur pribadi yang berbasis di Lovina, Bali Utara. Lovina
+                terkenal karena keindahan pariwisata lumba-lumba yang
+                menakjubkan. Sebagai penyedia tur profesional, Lovina Private
+                Tour menawarkan
+                <strong>
+                  {" "}
+                  pengalaman wisata yang unik dan tak terlupakan
+                </strong>{" "}
+                bagi para pelanggannya.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Nulla vehicula mi eu lorem eleifend, eu aliquet nulla mattis.
-                Nunc eget erat ac libero venenatis condimentum. Etiam vitae nisi
-                quis mi bibendum fringilla sit amet a nulla. Vivamus vitae magna
-                sed ligula commodo auctor. Integer sodales metus et justo
-                porttitor, et tincidunt urna tempus. Sed posuere tempus velit,
-                vel efficitur nisi pellentesque sed. Curabitur lobortis
-                scelerisque libero nec accumsan. Maecenas interdum enim id nunc
-                tincidunt fermentum. Phasellus vestibulum eleifend nunc, in
-                tincidunt lectus sodales nec.
+              <p className="text-lg text-gray-700 leading-relaxed text-justify">
+                Dengan staf yang terampil dan berpengalaman, Lovina Private Tour
+                berkomitmen untuk{" "}
+                <strong>memberikan layanan yang terbaik</strong> kepada setiap
+                pelanggan. Kami menyediakan berbagai paket tur yang disesuaikan
+                dengan kebutuhan dan preferensi Anda, mulai dari tur melihat
+                lumba-lumba hingga menjelajahi keindahan alam dan budaya Bali
+                Utara.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

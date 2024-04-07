@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Packages } from "../components/Packages";
-import { Review } from "../components/Review";
+import Review from "../components/Review";
 import Hero from "../components/Hero";
 import { Poster } from "../components/Poster";
 import AboutLovina from "../components/AboutLovina";

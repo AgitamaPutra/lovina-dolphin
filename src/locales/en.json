@@ -2,8 +2,8 @@
   "menu": {
     "home": "Home",
     "about": "About Us",
-    "services": "Our Services",
-    "gallery": "Gallery",
+    "services": "Our Packages",
+    "gallery": "Our Gallery",
     "contact": "Contact Us"
   },
   "greeting": "Hello, world!",
@@ -21,6 +21,10 @@
   "about": {
     "headerAbout": "about us",
     "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours."
+  },
+  "packages": {
+    "headerPackages": "Our Packages",
+    "textPackages": "Explore our diverse tour packages for dolphin watching, snorkeling, and more in Lovina, Bali."
   },
     "gellery": {
     "headerGallery": "OUR GALLERY",
@@ -190,5 +194,39 @@
 "price": "Price",
 "date": "Date",
 "country": "Country"
-}
+},
+ "reviews" :   [
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "rating": 5,
+    "image": "asset/profile1.jpg",
+    "review":
+      "I had an amazing experience with Lovina Private Dolphin Tour. The staff was friendly, the tour was well-organized, and we had the opportunity to see dolphins up close. Highly recommended!"
+  },
+  {
+    "id": 2,
+    "name": "Michael Anderson",
+    "rating": 4,
+     "image": "asset/profile2.jpg",
+    "review":
+      "Lovina Private Dolphin Tour exceeded my expectations. The guides were knowledgeable, and the boat was comfortable. The only downside was that we didn't see as many dolphins as we hoped, but overall, it was a great experience."
+  },
+  {
+    "id": 3,
+    "name": "Jessica Smith",
+    "rating": 5,
+     "image": "asset/profile3.jpg",
+    "review":
+      "Lovina Private Dolphin Tour was the highlight of our trip to Bali. The sunrise dolphin watching tour was breathtaking, and the guides made sure we had a memorable experience. I would definitely do it again!"
+  },
+  {
+    "id": 4,
+    "name": "David Thompson",
+    "rating": 3,
+     "image": "asset/profile4.jpg",
+    "review":
+      "Overall, Lovina Private Dolphin Tour was good, but there were some areas for improvement. The boat was a bit crowded, and we had difficulty seeing dolphins because of the number of other boats in the area."
+  }
+]
 }

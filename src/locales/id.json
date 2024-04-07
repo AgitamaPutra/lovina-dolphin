@@ -2,7 +2,7 @@
   "menu": {
     "home": "Beranda",
     "about": "Tentang Kami",
-    "services": "Layanan Kami",
+    "services": "Paket Kami",
     "gallery": "Galeri",
     "contact": "Hubungi Kami"
   },
@@ -25,6 +25,10 @@
     "gellery": {
     "headerGallery": "GALERI KAMI",
     "textGallery": "Jelajahi Koleksi Galeri Kami"
+  },
+   "packages": {
+    "headerPackages": "Paket Kami",
+    "textPackages": "Jelajahi beragam paket wisata kami untuk melihat lumba-lumba, snorkeling, dan masih banyak lagi di Lovina, Bali."
   },
   "follow" : {
     "textFollow": "Ikuti Kami"
@@ -144,5 +148,40 @@
     "price": "Harga",
     "date": "Tanggal",
     "country" : "Negara"
+  },
+  "reviews" :  [
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "rating": 5,
+    "image": "asset/profile1.jpg",
+    "review":
+      "Saya memiliki pengalaman yang menakjubkan dengan Lovina Private Dolphin Tour. Stafnya ramah, tur diatur dengan baik, dan kami memiliki kesempatan untuk melihat lumba-lumba dari dekat. Sangat direkomendasikan!"
+  },
+  {
+    "id": 2,
+    "name": "Michael Anderson",
+    "rating": 4,
+    "image": "asset/profile2.jpg",
+    "review":
+      "Lovina Private Dolphin Tour melebihi harapan saya. Para pemandu wisata sangat berpengetahuan, dan perahu nyaman. Satu-satunya downside adalah kami tidak melihat sebanyak lumba-lumba yang kami harapkan, tapi secara keseluruhan, itu adalah pengalaman yang luar biasa."
+  },
+  {
+    "id": 3,
+    "name": "Jessica Smith",
+    "rating": 5,
+    "image": "asset/profile3.jpg",
+    "review":
+      "Lovina Private Dolphin Tour adalah highlight dari perjalanan kami ke Bali. Tur menonton lumba-lumba saat matahari terbit sangat memukau, dan para pemandu memastikan kami memiliki pengalaman yang tak terlupakan. Saya pasti akan melakukannya lagi!"
+  },
+  {
+    "id": 4,
+    "name": "David Thompson",
+    "rating": 3,
+    "image": "asset/profile4.jpg",
+    "review":
+      "Secara keseluruhan, Lovina Private Dolphin Tour baik, tapi ada beberapa area yang perlu diperbaiki. Perahunya agak ramai, dan kami kesulitan melihat lumba-lumba karena banyaknya perahu lain di area tersebut."
   }
+]
 }
+

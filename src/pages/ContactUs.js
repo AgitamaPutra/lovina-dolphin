@@ -3,9 +3,10 @@ import Hero from "../components/Hero";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import Image from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
+import Image from "../asset/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
+
 const ContactUs = () => {
   const controls = useAnimation();
   const ref = useRef();
@@ -65,14 +66,13 @@ const ContactUs = () => {
         }
         image={Image}
       />
-      <motion.div
-        className="bg-gray-100 py-16"
-        initial={{ opacity: 0, y: 50 }}
-        animate={controls}
-        ref={ref}
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-0">
+      <div className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 z-0"
+          >
             <div>
               <MapContainer
                 center={[-8.1624, 115.0247]} // Koordinat Krisna Water Sports, Bali
@@ -118,9 +118,9 @@ const ContactUs = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

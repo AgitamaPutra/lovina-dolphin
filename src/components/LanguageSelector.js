@@ -14,10 +14,7 @@ const LanguageSelector = () => {
     <Select
       onChange={handleLanguageChange}
       defaultValue="en"
-      style={{
-        width: 175,
-        borderRadius: "0.375rem",
-      }}
+      className="w-48 rounded-lg touch-manipulation"
     >
       <Option value="en">
         <div className="flex items-center text-lg">English</div>

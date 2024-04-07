@@ -55,7 +55,7 @@ const Navbar = () => {
             <img src={Logo} alt="Logo" className="h-16 md:h-20" />
           </Link>
         </div>
-        <div className="md:flex items-center space-x-4 md:hidden">
+        <div className="items-center space-x-4 md:hidden ">
           <div className="md:block">
             <LanguageSelector />
           </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="md:flex items-center space-x-4 hidden md:block">
+        <div className="items-center space-x-4 hidden md:block">
           <div className="">
             <LanguageSelector />
           </div>

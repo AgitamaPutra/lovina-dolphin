@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Hero from "../components/Hero";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Image from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
 import { Helmet } from "react-helmet";
+import { motion, useAnimation } from "framer-motion";
 const ContactUs = () => {
+  const controls = useAnimation();
+  const ref = useRef();
+
+  useEffect(() => {
+    const refElement = ref.current;
+
+    const onScroll = () => {
+      if (refElement) {
+        const top = refElement.getBoundingClientRect().top;
+        const bottom = refElement.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        // When the element is in view
+        if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
+          controls.start({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          });
+        } else {
+          controls.start({
+            opacity: 0,
+            y: 50,
+          });
+        }
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [controls]);
+
   // Fungsi untuk membuka WhatsApp di halaman baru dengan nomor dan pesan yang ditentukan
   const handleWhatsAppClick = () => {
     const phoneNumber = "6281998348555"; // Nomor WhatsApp
@@ -32,7 +65,12 @@ const ContactUs = () => {
         }
         image={Image}
       />
-      <div className="bg-gray-100 py-16">
+      <motion.div
+        className="bg-gray-100 py-16"
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
+        ref={ref}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 z-0">
             <div>
@@ -69,7 +107,7 @@ const ContactUs = () => {
               </p>
               <p className="text-lg leading-relaxed mb-4">
                 <FaMapMarkerAlt className="inline-block mr-4 text-2xl" />
-                Krisna Water Sports, Temukus, Singaraja Buleleng
+                Krisna Water Sports, Temukus, Singaraja Buleleng
               </p>
               <div className="text-center mt-4">
                 <button
@@ -82,7 +120,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

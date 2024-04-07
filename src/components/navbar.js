@@ -27,6 +27,11 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Memindahkan posisi halaman ke atas saat lokasi berubah
+    setIsOpen(false); // Menutup menu navigasi setelah pengguna mengklik link
+  }, [location]); // Memicu efek setiap kali lokasi berubah
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

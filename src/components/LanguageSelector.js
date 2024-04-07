@@ -1,28 +1,33 @@
 import React, { useContext } from "react";
 import { I18nContext } from "../context/I18context";
-import { Select } from "antd";
-const { Option } = Select;
 
 const LanguageSelector = () => {
   const { changeLanguage } = useContext(I18nContext);
 
-  const handleLanguageChange = (value) => {
-    changeLanguage(value);
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    changeLanguage(selectedLanguage);
   };
 
   return (
-    <Select
+    <select
       onChange={handleLanguageChange}
       defaultValue="en"
-      className="w-48 rounded-lg touch-manipulation"
+      className=" rounded-lg touch-manipulation p-1 border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
     >
-      <Option value="en">
-        <div className="flex items-center text-lg">English</div>
-      </Option>
-      <Option value="id">
-        <div className="flex items-center text-lg">Bahasa Indonesia</div>
-      </Option>
-    </Select>
+      <option
+        value="en"
+        className="md:text-lg text-[10px] rounded-lg " // Menambahkan padding kiri dan kanan
+      >
+        English
+      </option>
+      <option
+        value="id"
+        className="md:text-lg text-[10px] rounded-lg  " // Menambahkan padding kiri dan kanan
+      >
+        Bahasa Indonesia
+      </option>
+    </select>
   );
 };
 

@@ -48,7 +48,7 @@
         "title": "Package I. Dolphin:",
         "desc": "Unforgettable Dolphin Watching Experience"
       },
-      "price": 300000,
+      "price": 400000,
       "added": 100000,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
@@ -73,7 +73,7 @@
         "title": "Package II. Dolphin + Swimming:",
         "desc": "Swimming Experience with Dolphins"
       },
-      "price": 400000,
+      "price": 450000,
       "added": 175000,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
@@ -97,7 +97,7 @@
         "title": "Package III. Dolphin + Snorkeling:",
         "desc": "Exciting Underwater Adventure"
       },
-      "price": 400000,
+      "price": 450000,
       "added": 175000,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",

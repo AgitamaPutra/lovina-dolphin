@@ -13,18 +13,21 @@
   "heroTextHome": "Experience the Magic of the Sea with the Lovina Bali Dolphin Tour.",
   "buttonHome": "CONTACT US",
   "contact": {
-    "headerContactUs": "CONTACT US",
+    "headerContactUs": "contact us",
     "textContact": "Discover diving adventures in Lovina, Bali, contact us now!",
     "paragContact": "Immerse yourself in the beauty of Lovina's underwater world with our extraordinary diving tours. Explore vibrant coral reefs, encounter majestic marine life, and create unforgettable memories beneath the waves. Our expert guides ensure a safe and exhilarating experience for divers of all levels. Contact us today to embark on an adventure that will leave you breathless!",
     "buttonContact": "Find Us"
   },
   "about": {
-    "headerAbout": "ABOUT US",
+    "headerAbout": "about us",
     "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours."
   },
     "gellery": {
     "headerGallery": "OUR GALLERY",
     "textGallery": "Explore Our Gallery Collection"
+  },
+   "follow" : {
+    "textFollow": "Follow Us"
   },
 "aboutLovina": {
 "title": "About Lovina, Bali",

@@ -5,9 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image1 from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
-import Image2 from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg";
-import Image3 from "../asset/weddings-art-commercial.jpg";
-import Image4 from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
+import Image2 from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp";
+import Image3 from "../asset/weddings-art-commercial.webp";
+import Image4 from "../asset/shooting-underwater.webp";
 import { Image } from "antd";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // Import icons
 

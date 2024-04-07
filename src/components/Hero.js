@@ -25,7 +25,7 @@ const Hero = ({ header, text, style, button, showButton, image, fungsi }) => {
             transition={{ delay: 0.5, duration: 1 }}
             className={`${style} mt-10 md:mt-20`}
           >
-            {header}
+            {header.toUpperCase()}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}

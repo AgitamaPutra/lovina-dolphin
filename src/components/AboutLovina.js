@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Image } from "antd";
-import Gambar from "../asset/weddings-art-commercial.jpg";
+import Gambar from "../asset/weddings-art-commercial.webp";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { I18nContext } from "../context/I18context";

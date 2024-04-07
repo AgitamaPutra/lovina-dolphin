@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
-import Image from "../asset/weddings-art-commercial.jpg";
+import Image from "../asset/weddings-art-commercial.webp";
 const AboutUs = () => {
   const { t } = useTranslation();
   return (

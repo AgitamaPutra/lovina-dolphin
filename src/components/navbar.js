@@ -51,9 +51,14 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-20 md:h-24">
         <div>
-          <Link to={'/'}>
+          <Link to={"/"}>
             <img src={Logo} alt="Logo" className="h-16 md:h-20" />
           </Link>
+        </div>
+        <div className="md:flex items-center space-x-4 md:hidden">
+          <div className="md:block">
+            <LanguageSelector />
+          </div>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
@@ -72,6 +77,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
         <div className="hidden md:flex items-center space-x-4">
           {menuItems.map((item) => (
             <Link
@@ -91,46 +97,47 @@ const Navbar = () => {
               {item.text}
             </Link>
           ))}
-          <LanguageSelector />
         </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.3 }}
-              className="fixed left-0 top-0 right-0 bottom-0 flex justify-center items-center z-50 h-screen bg-gray-800"
-            >
-              <button
-                className="absolute top-0 right-0 pt-5 pr-3 focus:outline-none text-white"
-                onClick={closeMenu}
-              >
-                <IoClose className="h-8 w-8" />
-              </button>
-              <div className="w-full md:max-w-md p-4  text-white relative">
-                {menuItems.map((item, index) => (
-                  <Link
-                    key={item.key}
-                    to={item.path}
-                    className={`block text-center py-2 hover:bg-blue-700 hover:text-white transition-colors ${
-                      index !== menuItems.length - 0
-                        ? "border-b-[1px] border-solid border-white mx-20"
-                        : ""
-                    }`}
-                    onClick={closeMenu}
-                  >
-                    {item.text}
-                  </Link>
-                ))}
-                <div className="flex justify-center items-center mt-4 bg-transparent">
-                  <LanguageSelector />
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div className="md:flex items-center space-x-4 hidden md:block">
+          <div className="">
+            <LanguageSelector />
+          </div>
+        </div>
       </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.3 }}
+            className="fixed left-0 top-0 right-0 bottom-0 flex justify-center items-center z-50 h-screen bg-gray-800"
+          >
+            <button
+              className="absolute top-0 right-0 pt-5 pr-3 focus:outline-none text-white"
+              onClick={closeMenu}
+            >
+              <IoClose className="h-8 w-8" />
+            </button>
+            <div className="w-full md:max-w-md p-4  text-white relative">
+              {menuItems.map((item, index) => (
+                <Link
+                  key={item.key}
+                  to={item.path}
+                  className={`block text-center py-2 hover:bg-blue-700 hover:text-white transition-colors ${
+                    index !== menuItems.length - 0
+                      ? "border-b-[1px] border-solid border-white mx-20"
+                      : ""
+                  }`}
+                  onClick={closeMenu}
+                >
+                  {item.text}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

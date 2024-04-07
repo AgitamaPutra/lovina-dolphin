@@ -32,7 +32,14 @@ export const Poster = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [controls]);
-
+  const handleClickWa = () => {
+    const phoneNumber = "6281998348555"; // Nomor WhatsApp
+    const message = "Halo Awix, Saya ingin booking packages promo dolphin!"; // Pesan yang ingin dikirim
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <div
       className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center py-10 md:py-20 px-5 md:px-20"
@@ -67,6 +74,7 @@ export const Poster = () => {
         <motion.button
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
+          onClick={handleClickWa}
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
         >
           {t("needHelp")}

@@ -44,7 +44,7 @@
   "data": [
     {
       "id": 1,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title" :"Paket I. Lumba - Lumba", "desc": "Pengalaman Tak Terlupakan Melihat Lumba-lumba"} ,
       "price": 300000,
       "added" : 100000,
@@ -60,7 +60,7 @@
     },
     {
       "id": 2,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title" : "Paket II. Lumba - Lumba + Berenang", "desc": "Pengalaman Berenang Bersama Lumba-lumba"} ,
       "price": 400000,
       "added" : 175000,
@@ -75,7 +75,7 @@
     },
     {
       "id": 3,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title": "Paket III. Lumba - Lumba + Snorkling", "desc": "Petualangan Seru di Bawah Laut"} ,
       "price": 400000,
       "added" : 175000,
@@ -92,7 +92,7 @@
     },
     {
       "id": 4,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title": "Paket IV. Lumba - Lumba, Berenang, Snorkling", "desc": "Petualangan Seru Lengkap di Laut"} ,
       "price": 500000,
       "added" : 225000,
@@ -109,7 +109,7 @@
     },
     {
       "id": 5,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title": "Paket V. Lumba Lumba + Taman Laut", "desc": "Petualangan Seru di Laut dan Taman Laut"} ,
       "price": 100000,
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca."},
@@ -124,7 +124,7 @@
     },
     {
       "id": 6,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {"title": "Paket VI. Fishing Trip Lovina", "desc": " Petualangan Memancing Malam dan Siang di Lovina"},
       "price": "Rp 500.000 per Boat",
       "duration": {"title": "Durasi dan Kegiatan", "desc": "12 Jam Malam atau 5 Jam Siang"},

@@ -43,7 +43,7 @@
   "data": [
     {
       "id": 1,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {
         "title": "Package I. Dolphin:",
         "desc": "Unforgettable Dolphin Watching Experience"
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {
         "title": "Package II. Dolphin + Swimming:",
         "desc": "Swimming Experience with Dolphins"
@@ -92,7 +92,7 @@
     },
     {
       "id": 3,
-      "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
       "name": {
         "title": "Package III. Dolphin + Snorkeling:",
         "desc": "Exciting Underwater Adventure"
@@ -117,7 +117,7 @@
     },
     {
   "id": 4,
-  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
   "name": {
     "title": "Package IV. Dolphin, Swimming, Snorkeling",
     "desc": "Complete Exciting Sea Adventure"
@@ -143,7 +143,7 @@
 },
 {
   "id": 5,
-  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+ "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
   "name": {
     "title": "Package V. Dolphin + Marine Park",
     "desc": "Exciting Sea and Marine Park Adventure"
@@ -164,7 +164,7 @@
 },
 {
   "id": 6,
-  "img": ["asset/shooting-underwater.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.jpg", "asset/weddings-art-commercial.jpg", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
   "name": {
     "title": "Package VI. Fishing Trip Lovina",
     "desc": "Exciting Day and Night Fishing Adventure in Lovina"

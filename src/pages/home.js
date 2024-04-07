@@ -37,6 +37,7 @@ export const Home = () => {
         <meta name="keywords" content="Dolphin" />
         <meta name="keywords" content="Lumba-lumba Bali" />
         <meta name="keywords" content="Lumba-lumba lovina" />
+        <meta name="keywords" content="Lumba-lumba" />
         <meta name="keywords" content="Bali Utara" />
         <meta name="keywords" content="Snorkling" />
         <meta name="keywords" content="Snorkling Lovina" />

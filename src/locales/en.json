@@ -20,7 +20,9 @@
   },
   "about": {
     "headerAbout": "about us",
-    "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours."
+    "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours.",
+    "parag1": "Lovina Dolphin Private Tour is a private tour service provider based in Lovina, North Bali. Lovina is famous for its amazing dolphin tourism. As a professional tour provider, Lovina Private Tour offers a unique and unforgettable tourism experience for its customers.",
+    "parag2": "With skilled and experienced staff, Lovina Private Tour is committed to providing the best service to every customer. We provide various tour packages tailored to your needs and preferences, from dolphin watching tours to exploring the natural beauty and culture of North Bali."
   },
   "packages": {
     "headerPackages": "Our Packages",
@@ -47,7 +49,7 @@
   "data": [
     {
       "id": 1,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
         "title": "Package I. Dolphin:",
         "desc": "Unforgettable Dolphin Watching Experience"
@@ -72,7 +74,7 @@
     },
     {
       "id": 2,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
         "title": "Package II. Dolphin + Swimming:",
         "desc": "Swimming Experience with Dolphins"
@@ -96,7 +98,7 @@
     },
     {
       "id": 3,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
         "title": "Package III. Dolphin + Snorkeling:",
         "desc": "Exciting Underwater Adventure"
@@ -121,7 +123,7 @@
     },
     {
   "id": 4,
-  "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
   "name": {
     "title": "Package IV. Dolphin, Swimming, Snorkeling",
     "desc": "Complete Exciting Sea Adventure"
@@ -147,12 +149,12 @@
 },
 {
   "id": 5,
- "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+ "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
   "name": {
     "title": "Package V. Dolphin + Marine Park",
     "desc": "Exciting Sea and Marine Park Adventure"
   },
-  "price": 100000,
+  "price": 450000,
   "duration": {
     "title": "Duration And Activities",
     "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. Experience an exciting adventure at sea and in the marine park."
@@ -168,7 +170,7 @@
 },
 {
   "id": 6,
-  "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+  "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
   "name": {
     "title": "Package VI. Fishing Trip Lovina",
     "desc": "Exciting Day and Night Fishing Adventure in Lovina"

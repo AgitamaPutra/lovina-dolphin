@@ -20,7 +20,9 @@
   },
   "about": {
     "headerAbout": "tentang kami",
-    "textAbout": "Rasakan petualangan ramah lingkungan dengan Lovina Dolphin Tours."
+    "textAbout": "Rasakan petualangan ramah lingkungan dengan Lovina Dolphin Tours.",
+    "p1": "Lovina Dolphin Private Tour adalah penyedia layanan tur pribadi yang berbasis di Lovina, Bali Utara. Lovina terkenal karena keindahan pariwisata lumba-lumba yang menakjubkan. Sebagai penyedia tur profesional, Lovina Private Tour menawarkan pengalaman wisata yang unik dan tak terlupakan bagi para pelanggannya.",
+    "p2": "Dengan staf yang terampil dan berpengalaman, Lovina Private Tour berkomitmen untuk memberikan layanan yang terbaik kepada setiap pelanggan. Kami menyediakan berbagai paket tur yang disesuaikan dengan kebutuhan dan preferensi Anda, mulai dari tur melihat lumba-lumba hingga menjelajahi keindahan alam dan budaya Bali Utara."
   },
     "gellery": {
     "headerGallery": "GALERI KAMI",
@@ -39,8 +41,8 @@
 
   "aboutLovina" : {
     "title": "Tentang Lovina, Bali",
-    "p1": "Selamat datang di Lovina, Bali, tempat di mana keindahan alam bawah laut dan pertunjukan lumba-lumba yang menakjubkan menjadi daya tarik utama. Di sini, para pengunjung dapat merasakan keajaiban alam saat mereka menyaksikan gerombolan lumba-lumba yang bermain riang di perairan sekitar Lovina. Pengalaman menonton lumba-lumba di Lovina tidak hanya menyenangkan, tetapi juga memberikan pemahaman yang lebih dalam tentang kehidupan laut yang luar biasa.",
-    "p2" : "Tak hanya itu, destinasi ini juga menyuguhkan petualangan snorkeling yang memukau di terumbu karang yang indah. Dengan mengapung di atas air, pengunjung dapat memasuki dunia bawah laut yang berwarna-warni dan penuh kehidupan, menyaksikan ikan-ikan berenang di antara terumbu karang yang menakjubkan. Lovina, dengan keindahan alamnya yang memikat dan aktivitas menariknya, adalah surga bagi para pecinta alam dan penggemar petualangan di Bali.",
+    "parag1": "Selamat datang di Lovina, Bali, tempat di mana keindahan alam bawah laut dan pertunjukan lumba-lumba yang menakjubkan menjadi daya tarik utama. Di sini, para pengunjung dapat merasakan keajaiban alam saat mereka menyaksikan gerombolan lumba-lumba yang bermain riang di perairan sekitar Lovina. Pengalaman menonton lumba-lumba di Lovina tidak hanya menyenangkan, tetapi juga memberikan pemahaman yang lebih dalam tentang kehidupan laut yang luar biasa.",
+    "parag2" : "Tak hanya itu, destinasi ini juga menyuguhkan petualangan snorkeling yang memukau di terumbu karang yang indah. Dengan mengapung di atas air, pengunjung dapat memasuki dunia bawah laut yang berwarna-warni dan penuh kehidupan, menyaksikan ikan-ikan berenang di antara terumbu karang yang menakjubkan. Lovina, dengan keindahan alamnya yang memikat dan aktivitas menariknya, adalah surga bagi para pecinta alam dan penggemar petualangan di Bali.",
     "button": "Hubungi Kami"
   },
   "needHelp" : "Booking Sekarang!",
@@ -48,7 +50,7 @@
   "data": [
     {
       "id": 1,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title" :"Paket I. Lumba - Lumba", "desc": "Pengalaman Tak Terlupakan Melihat Lumba-lumba"} ,
       "price": 400000,
       "added" : 100000,
@@ -64,7 +66,7 @@
     },
     {
       "id": 2,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title" : "Paket II. Lumba - Lumba + Berenang", "desc": "Pengalaman Berenang Bersama Lumba-lumba"} ,
       "price": 450000,
       "added" : 175000,
@@ -79,7 +81,7 @@
     },
     {
       "id": 3,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket III. Lumba - Lumba + Snorkling", "desc": "Petualangan Seru di Bawah Laut"} ,
       "price": 450000,
       "added" : 175000,
@@ -96,7 +98,7 @@
     },
     {
       "id": 4,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket IV. Lumba - Lumba, Berenang, Snorkling", "desc": "Petualangan Seru Lengkap di Laut"} ,
       "price": 500000,
       "added" : 225000,
@@ -113,9 +115,9 @@
     },
     {
       "id": 5,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket V. Lumba Lumba + Taman Laut", "desc": "Petualangan Seru di Laut dan Taman Laut"} ,
-      "price": 100000,
+      "price": 450000,
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca."},
       "fas": "Fasilitas",
       "facility": [
@@ -128,9 +130,9 @@
     },
     {
       "id": 6,
-      "img": ["asset/shooting-underwater.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/woman-with-scuba-gear-swimming-ocean.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket VI. Fishing Trip Lovina", "desc": " Petualangan Memancing Malam dan Siang di Lovina"},
-      "price": "Rp 500.000 per Boat",
+      "price": 500000,
       "duration": {"title": "Durasi dan Kegiatan", "desc": "12 Jam Malam atau 5 Jam Siang"},
       "fas": "Fasilitas",
       "facility": [

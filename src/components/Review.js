@@ -57,7 +57,7 @@ const Review = () => {
     <section className="bg-gray-100 py-16" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-gray-800 mb-8 text-center">
-          {t("review.header")}
+          Reviews
         </h2>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"

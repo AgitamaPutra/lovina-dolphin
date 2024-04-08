@@ -48,7 +48,7 @@ export const Packages = () => {
       });
     }
   }, [isVisible, controls]);
-
+  console.log(data.data);
   return (
     <div className="bg-gradient-to-b bg-white">
       <div className="max-w-7xl w-full mx-auto px-4 py-8" ref={ref}>
@@ -59,14 +59,11 @@ export const Packages = () => {
         >
           ☆ {t("AWIX LOVINA PRIVATE DOLPHIN TOUR")} ☆
         </motion.h1>
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          animate={controls}
-        >
+        <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {data.data.slice(0, 3).map((item, index) => (
             <Link
               key={item.id}
-              to={`services/${item.id}`}
+              to={`our-packages/${item.id}`}
               className="focus:outline-none"
             >
               <motion.div
@@ -75,40 +72,56 @@ export const Packages = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={controls}
                 transition={{ delay: index * 0.2 }}
+                whileHover={{ scale: 1.05 }} // 1. Animasi kartu saat dihover
               >
-                <Card
-                  hoverable
-                  cover={<img alt="Lovina Dolphin" src={item.img[index + 1]} />}
-                  className="mb-4 cursor-pointer"
-                  style={{ transition: "transform 0.3s ease-in-out" }}
+                <motion.div
+                  animate={isVisible ? "visible" : "hidden"} // 2. Animasi saat masuk ke dalam viewport
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 50 },
+                  }}
+                  transition={{ duration: 0.5 }}
                 >
-                  <div>
-                    <p className="font-bold text-xl mb-2 text-center">
-                      {t(item.name.title)}
-                    </p>
-                    <p className="text-xl mb-2 text-center">
-                      Start From{" "}
-                      <strong className="text-3xl">
-                        {formatPrice(item.price)}
-                      </strong>
-                    </p>
-                    <div className="text-center mt-8 mb-4">
-                      <Link
-                        to={`services/${item.id}`}
-                        className="bg-blue-500 hover:bg-blue-700 p-3 rounded-lg text-white"
-                      >
-                        {t("packageBtn")}
-                      </Link>
+                  <Card
+                    hoverable
+                    cover={
+                      <img alt="Lovina Dolphin" src={item.img[index]} /> // Perbaikan indeks gambar
+                    }
+                    className="mb-4 cursor-pointer"
+                    style={{ transition: "transform 0.3s ease-in-out" }}
+                  >
+                    <div>
+                      <p className="font-bold text-xl mb-2 text-center">
+                        {t(item.name.title)}
+                      </p>
+                      <p className="text-lg md:text-xl mb-2 text-center">
+                        Start From -{" "}
+                        <strong className="text-xl md:text-3xl">
+                          {formatPrice(item.price)}
+                        </strong>
+                        <span className="text-gray-400 text-sm md:text-lg">
+                          {" "}
+                          / 4 pax
+                        </span>
+                      </p>
+                      <div className="text-center mt-8 mb-4">
+                        <Link
+                          to={`our-packages/${item.id}`}
+                          className="bg-blue-500 hover:bg-blue-700 p-3 rounded-lg text-white"
+                        >
+                          {t("packageBtn")}
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                </Card>
+                  </Card>
+                </motion.div>
               </motion.div>
             </Link>
           ))}
         </motion.div>
         <div className="text-center mt-2">
           <Link
-            to="/packages"
+            to="/our-packages"
             className="text-blue-500 hover:text-blue-700 font-bold text-lg "
           >
             See More Packages

@@ -71,26 +71,11 @@ const AboutUs = () => {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
-                <strong>Lovina Dolphin Private Tour</strong> adalah penyedia
-                layanan tur pribadi yang berbasis di Lovina, Bali Utara. Lovina
-                terkenal karena keindahan pariwisata lumba-lumba yang
-                menakjubkan. Sebagai penyedia tur profesional, Lovina Private
-                Tour menawarkan
-                <strong>
-                  {" "}
-                  pengalaman wisata yang unik dan tak terlupakan
-                </strong>{" "}
-                bagi para pelanggannya.
+              <p className="text-normal md:text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                {t("about.parag1")}
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                Dengan staf yang terampil dan berpengalaman, Lovina Private Tour
-                berkomitmen untuk{" "}
-                <strong>memberikan layanan yang terbaik</strong> kepada setiap
-                pelanggan. Kami menyediakan berbagai paket tur yang disesuaikan
-                dengan kebutuhan dan preferensi Anda, mulai dari tur melihat
-                lumba-lumba hingga menjelajahi keindahan alam dan budaya Bali
-                Utara.
+              <p className="text-normal md:text-lg text-gray-700 leading-relaxed text-justify">
+                {t("about.parag2")}
               </p>
             </div>
           </div>

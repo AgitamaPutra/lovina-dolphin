@@ -75,7 +75,7 @@ const ContactUs = () => {
           >
             <div>
               <MapContainer
-                center={[-8.1624, 115.0247]} // Koordinat Krisna Water Sports, Bali
+                center={[-8.180499578653599, 114.9865115788152]} // Koordinat Krisna Water Sports, Temukus, Buleleng
                 zoom={13}
                 style={{
                   height: "400px",
@@ -85,8 +85,8 @@ const ContactUs = () => {
                 }}
               >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position={[-8.1624, 115.0247]}>
-                  <Popup>Krisna Water Sports, Bali</Popup>
+                <Marker position={[-8.180499578653599, 114.9865115788152]}>
+                  <Popup>Krisna Water Sports, Temukus, Buleleng</Popup>
                 </Marker>
               </MapContainer>
             </div>

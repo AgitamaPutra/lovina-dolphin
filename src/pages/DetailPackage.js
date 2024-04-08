@@ -113,7 +113,13 @@ export const DetailPackage = () => {
 
   return (
     <div className="bg-cover bg-center bg-gradient-to-b from-blue-400 to-blue-700 min-h-screen">
-      <Hero text={t(selectedPackage.name.title)} />
+      <Hero
+        header={t(selectedPackage.name.title)}
+        style={
+          "font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
+        }
+        image={selectedPackage.id - 1}
+      />
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="max-w-3xl p-4 md:p-8 bg-white shadow-lg rounded-lg col-span-8 md:col-span-8">
@@ -126,7 +132,7 @@ export const DetailPackage = () => {
               className="w-full rounded-lg"
             />
             <div className="grid grid-cols-3 gap-4">
-              {selectedPackage.img.slice(1).map((img, index) => (
+              {selectedPackage.img.slice(1, 4).map((img, index) => (
                 <div key={index}>
                   <Image
                     src={require(`../${img}`)}

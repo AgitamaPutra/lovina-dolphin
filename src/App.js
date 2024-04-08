@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/our-packages" element={<OurServices />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/services/:id" element={<DetailPackage />} />
+            <Route path="/our-packages/:id" element={<DetailPackage />} />
           </Routes>
         </Layout>
       </I18nProvider>

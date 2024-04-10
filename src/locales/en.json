@@ -20,7 +20,7 @@
   },
   "about": {
     "headerAbout": "about us",
-    "textAbout": "Experience eco-friendly adventures with Lovina Dolphin Tours.",
+    "textAbout": "Experience eco-friendly adventures with Lovina Private Dolphin Tours.",
     "parag1": "Lovina Dolphin Private Tour is a private tour service provider based in Lovina, North Bali. Lovina is famous for its amazing dolphin tourism. As a professional tour provider, Lovina Private Tour offers a unique and unforgettable tourism experience for its customers.",
     "parag2": "With skilled and experienced staff, Lovina Private Tour is committed to providing the best service to every customer. We provide various tour packages tailored to your needs and preferences, from dolphin watching tours to exploring the natural beauty and culture of North Bali."
   },
@@ -38,6 +38,16 @@
   "poster": {
     "text": "Experience the unforgettable sensation of watching dolphins in Lovina Bali! For only 350.000 thousand rupiah, you can enjoy a dolphin show for up to 4 people. Package includes boat, captain, life jacket and mineral water. Order now and make your moment special!"
   },
+  
+"payment": {
+"text": "Please make a 30% down payment to the following bank account",
+"bank": "Bank Central Asia",
+"name": "Agitama Putra",
+"rek": "221134134",
+ "nama" : "Name",
+    "acc" : "Account Number",
+    "dp" : "Down Payment 30% from Price"
+},
 "aboutLovina": {
 "title": "About Lovina, Bali",
 "p1": "Welcome to Lovina, Bali, where the beauty of underwater world and the stunning dolphin shows are the main attractions. Here, visitors can experience the marvels of nature as they witness the playful pods of dolphins frolicking in the waters around Lovina. The experience of watching dolphins in Lovina is not only enjoyable but also provides a deeper understanding of the extraordinary marine life.",
@@ -51,15 +61,16 @@
       "id": 1,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
-        "title": "Package I. Dolphin:",
+        "title": "Package I. Dolphin",
         "desc": "Unforgettable Dolphin Watching Experience"
       },
       "price": 400000,
       "added": 100000,
+      "pax" : 4,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 70,000 per person will be charged for each additional participant.",
-        "etc": "Extra 70K / Person, if more than 4 people"
+        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 100,000 per person will be charged for each additional participant.",
+        "etc": "Extra 100K / Person, if more than 4 people"
       },
       "duration": {
         "title": "Duration And Activities",
@@ -76,14 +87,15 @@
       "id": 2,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
-        "title": "Package II. Dolphin + Swimming:",
+        "title": "Package II. Dolphin + Swimming",
         "desc": "Swimming Experience with Dolphins"
       },
       "price": 450000,
-      "added": 175000,
+      "added": 200000,
+      "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200,000 per person will be charged for each additional participant."
       },
       "duration": {
         "title": "Duration And Activities",
@@ -100,14 +112,15 @@
       "id": 3,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
       "name": {
-        "title": "Package III. Dolphin + Snorkeling:",
+        "title": "Package III. Dolphin + Snorkeling",
         "desc": "Exciting Underwater Adventure"
       },
       "price": 450000,
-      "added": 175000,
+      "added": 200000,
+      "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200,000 per person will be charged for each additional participant."
       },
       "duration": {
         "title": "Duration And Activities",
@@ -129,10 +142,11 @@
     "desc": "Complete Exciting Sea Adventure"
   },
   "price": 500000,
-  "added": 225000,
+  "added": 250000,
+  "pax" : 2,
   "personAndAdditional": {
     "tittle": "Passenger and Additional",
-    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 225,000 per person will be charged for each additional participant."
+    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 250,000 per person will be charged for each additional participant."
   },
   "duration": {
     "title": "Duration And Activities",
@@ -166,25 +180,6 @@
     {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."},
     {"title": "Snorkeling Equipment", "description": "Explore the underwater world comfortably with high-quality snorkeling equipment, including masks and fins."},
     {"title": "Fish Bread", "description": "Enjoy special moments feeding fish in open waters."}
-  ]
-},
-{
-  "id": 6,
-  "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
-  "name": {
-    "title": "Package VI. Fishing Trip Lovina",
-    "desc": "Exciting Day and Night Fishing Adventure in Lovina"
-  },
-  "price": 500000,
-  "duration": {
-    "title": "Duration And Activities",
-    "desc": "12 Hours Night or 5 Hours Day"
-  },
-  "fas": "Facilities",
-  "facility": [
-    {"title": "Boat + Captain", "description": "Enjoy a fun fishing experience with the assistance of an experienced captain who will take you to the best locations for fishing."},
-    {"title": "Life Jacket", "description": "Your safety is our top priority. Each participant will be provided with a life jacket to ensure safety on the water."},
-    {"title": "Mineral Water", "description": "To keep you hydrated during the adventure, we provide fresh mineral water to enjoy during the journey."}
   ]
 }
   ],

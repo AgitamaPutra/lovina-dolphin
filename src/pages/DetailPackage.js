@@ -5,7 +5,7 @@ import { Input, Select, DatePicker, Image, Form, message } from "antd";
 import moment from "moment";
 import { formatPrice } from "../utills/helpers";
 import Hero from "../components/Hero";
-
+import Background from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
 const { Option } = Select;
 
 export const DetailPackage = () => {
@@ -19,6 +19,7 @@ export const DetailPackage = () => {
     package: "",
     person: 0,
     price: "",
+    pax: "",
     date: "",
     country: "--Select One--",
   });
@@ -35,7 +36,9 @@ export const DetailPackage = () => {
       return;
     }
     if (name === "person") {
-      const additionalPrice = selectedPackage.added * parseInt(value);
+      const additionalPrice = value
+        ? selectedPackage.added * parseInt(value)
+        : 0;
       newPrice = formatPrice(parseInt(selectedPackage.price) + additionalPrice);
     }
     setForm({
@@ -45,6 +48,10 @@ export const DetailPackage = () => {
     });
   };
 
+  const priceString = form.price.replace(/[^0-9]/g, ""); // Remove non-numeric characters
+  const price = parseInt(priceString); // Parse the numeric string to an integer
+  const downPayment = (30 / 100) * price;
+  console.log("downPayment", downPayment);
   const onChange = (date, dateString) => {
     setForm({
       ...form,
@@ -77,7 +84,26 @@ export const DetailPackage = () => {
       return;
     }
 
-    const whatsappMessage = `*AWIX DOLPHIN TOUR*%0A%0ABooking%20Details%0AName%3A%20${name}%0APhone%3A%20${phone}%0APackage%3A%20${packageName}%0APerson%3A%20${person}%0APrice%3A%20${price}%0ADate%3A%20${date}%0ACountry%3A%20${country}`;
+    if (country === "--Select One--") {
+      message.info("Please select the country");
+      return;
+    }
+
+    const whatsappMessage = `*AWIX DOLPHIN TOUR*%0A%0ABooking%20Details%0A${t(
+      "form.name"
+    )}%3A%20${name}%0A${t("form.phone")}%3A%20${phone}%0A${t(
+      "form.package"
+    )}%3A%20${packageName}%0A${t("form.pax")}%3A%20${person}%0A${t(
+      "form.price"
+    )}%3A%20${price}%0A${t("form.date")}%3A%20${date}%0A${t(
+      "form.country"
+    )}%3A%20${country}%0A%0A${"*Note*"}%0A${t("payment.text")}%0ABank%3A%20${t(
+      "payment.bank"
+    )}%0A${t("payment.acc")}%3A%20${t("payment.rek")}%0A${t(
+      "payment.nama"
+    )}%3A%20${t("payment.name")}%0A${t("payment.dp")}%3A%20${formatPrice(
+      downPayment
+    )}`;
     const whatsappURL = `https://wa.me/+6281238068638/?text=${whatsappMessage}`;
     window.open(whatsappURL, "_blank");
   };
@@ -96,6 +122,7 @@ export const DetailPackage = () => {
           setForm((prevForm) => ({
             ...prevForm,
             package: packageFound.name.title,
+            pax: packageFound.pax,
             price: formatPrice(packageFound.price),
           }));
         }
@@ -110,20 +137,20 @@ export const DetailPackage = () => {
   if (!selectedPackage) {
     return <p>{t("packageNotFound")}</p>;
   }
-
+  console.log(form.pax);
   return (
-    <div className="bg-cover bg-center bg-gradient-to-b from-blue-400 to-blue-700 min-h-screen">
+    <div className="bg-gray-100 min-h-screen">
       <Hero
         header={t(selectedPackage.name.title)}
         style={
           "font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
         }
-        image={selectedPackage.id - 1}
+        image={Background}
       />
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="max-w-3xl p-4 md:p-8 bg-white shadow-lg rounded-lg col-span-8 md:col-span-8">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-xl font-bold mb-4 md:text-3xl text-center">
               {t(selectedPackage.name.title)} {t(selectedPackage.name.desc)}
             </h2>
             <Image
@@ -199,7 +226,7 @@ export const DetailPackage = () => {
                     type="text"
                     name="package"
                     className=" block w-full"
-                    value={form.package}
+                    value={`${form.package} / ${form.pax}`}
                     onChange={handleChangeForm}
                   />
                 </label>
@@ -258,12 +285,14 @@ export const DetailPackage = () => {
                     </Select>
                   </Form.Item>
                 </label>
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  onClick={handleBookingNow} // Menangani klik tombol "Booking Now"
-                >
-                  Booking Now
-                </button>
+                <div className="flex justify-end items-end py-4">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    onClick={handleBookingNow} // Menangani klik tombol "Booking Now"
+                  >
+                    Booking Now
+                  </button>
+                </div>
               </Form>
             </div>
           </div>

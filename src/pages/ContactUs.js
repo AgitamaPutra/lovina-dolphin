@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Image from "../asset/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
-
+import { FaLocationDot } from "react-icons/fa6";
 const ContactUs = () => {
   const controls = useAnimation();
   const ref = useRef();
@@ -109,12 +109,16 @@ const ContactUs = () => {
                 <FaMapMarkerAlt className="inline-block mr-4 text-2xl" />
                 Krisna Water Sports, Temukus, Singaraja Buleleng
               </p>
-              <div className="text-center mt-4">
+              <div className="flex justify-center items-center mt-4">
                 <button
                   onClick={handleFindUsClick}
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                  className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
                 >
-                  {t("contact.buttonContact")}
+                  <span className="my-auto mr-2">
+                    {" "}
+                    <FaLocationDot />
+                  </span>
+                  <span>{t("contact.buttonContact")}</span>
                 </button>
               </div>
             </div>

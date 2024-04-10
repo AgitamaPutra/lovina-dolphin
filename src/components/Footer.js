@@ -7,7 +7,14 @@ import { useTranslation } from "react-i18next";
 export const Footer = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
-
+  const handleClickWa = () => {
+    const phoneNumber = "6281998348555"; // Nomor WhatsApp
+    const message = "Halo Awix, Saya ingin booking packages!"; // Pesan yang ingin dikirim
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
   useEffect(() => {
     const onScroll = () => {
       const footer = document.querySelector("footer");
@@ -68,7 +75,7 @@ export const Footer = () => {
               <Link to="#" className="text-white text-xl">
                 <FaInstagram />
               </Link>
-              <Link to="#" className="text-white text-xl">
+              <Link onClick={handleClickWa} className="text-white text-xl">
                 <FaWhatsapp />
               </Link>
             </div>

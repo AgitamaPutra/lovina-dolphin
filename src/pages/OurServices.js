@@ -82,7 +82,7 @@ export const OurServices = () => {
                   </div>
                   <div className="text-center pb-4 mb-4">
                     <Link
-                      to={`our-packages/${item.id}`}
+                      to={`/our-packages/${item.id}`}
                       className="bg-blue-500 hover:bg-blue-700 p-3 rounded-lg text-white"
                     >
                       {t("packageBtn")}

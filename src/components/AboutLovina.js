@@ -47,7 +47,14 @@ const AboutLovina = () => {
       });
     }
   }, [isVisible, controls]);
-
+  const handleClickWa = () => {
+    const phoneNumber = "6281998348555"; // Nomor WhatsApp
+    const message = "Halo Awix, Saya ingin booking packages!"; // Pesan yang ingin dikirim
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <div className="bg-gray-200 py-10 md:py-20 px-5 md:px-20">
       <motion.div
@@ -61,7 +68,10 @@ const AboutLovina = () => {
           <p className="text-lg mb-4 text-justify">{t("aboutLovina.p1")}</p>
           <p className="text-lg mb-4 text-justify">{t("aboutLovina.p2")}</p>
           <div className="flex justify-center items-center">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            <button
+              onClick={handleClickWa}
+              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            >
               {t("aboutLovina.button")}
             </button>
           </div>

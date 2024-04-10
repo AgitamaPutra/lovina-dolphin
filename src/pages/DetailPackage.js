@@ -69,16 +69,15 @@ export const DetailPackage = () => {
       date,
       country,
     } = form;
-
-    // Validasi bahwa semua bidang formulir telah diisi
     if (
       !name ||
       !phone ||
       !packageName ||
-      !person ||
       !price ||
       !date ||
-      !country
+      !country ||
+      person === "" ||
+      person === null
     ) {
       message.info("Please fill in all fields before booking.");
       return;
@@ -106,10 +105,10 @@ export const DetailPackage = () => {
     )}%3A%20${t("payment.name")}%0A${t("payment.dp")}%3A%20${formatPrice(
       downPayment
     )}`;
-    const whatsappURL = `https://wa.me/+6281238068638/?text=${whatsappMessage}`;
+    const whatsappURL = `https://wa.me/+6281998348555/?text=${whatsappMessage}`;
     window.open(whatsappURL, "_blank");
   };
-
+  console.log(form);
   useEffect(() => {
     const fetchData = async () => {
       try {

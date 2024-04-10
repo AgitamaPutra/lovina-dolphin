@@ -226,7 +226,7 @@ export const DetailPackage = () => {
                     type="text"
                     name="package"
                     className=" block w-full"
-                    value={`${form.package} / ${form.pax}`}
+                    value={`${form.package} / ${form.pax} Pax`}
                     onChange={handleChangeForm}
                   />
                 </label>

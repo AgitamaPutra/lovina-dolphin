@@ -93,9 +93,11 @@ export const DetailPackage = () => {
       "form.name"
     )}%3A%20${name}%0A${t("form.phone")}%3A%20${phone}%0A${t(
       "form.package"
-    )}%3A%20${packageName}%0A${t("form.pax")}%3A%20${person}%0A${t(
-      "form.price"
-    )}%3A%20${price}%0A${t("form.date")}%3A%20${date}%0A${t(
+    )}%3A%20${`${packageName} / ${selectedPackage.pax} Pax`}%0A${t(
+      "form.pax"
+    )}%3A%20${person}%0A${t("form.total")}%3A%20${
+      parseInt(selectedPackage.pax) + parseInt(person)
+    }%0A${t("form.price")}%3A%20${price}%0A${t("form.date")}%3A%20${date}%0A${t(
       "form.country"
     )}%3A%20${country}%0A%0A${"*Note*"}%0A${t("payment.text")}%0ABank%3A%20${t(
       "payment.bank"

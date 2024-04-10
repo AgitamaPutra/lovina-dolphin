@@ -12,11 +12,16 @@
   "headerHome": "LOVINA PRIVATE DOLPHIN TOUR",
   "heroTextHome": "Experience the Magic of the Sea with the Lovina Bali Dolphin Tour.",
   "buttonHome": "CONTACT US",
+  "galeri": {
+    "header": "OUR GALLERY",
+    "text": "Explore Our Gallery Collection"
+  },
   "contact": {
     "headerContactUs": "contact us",
     "textContact": "Discover diving adventures in Lovina, Bali, contact us now!",
     "paragContact": "Immerse yourself in the beauty of Lovina's underwater world with our extraordinary diving tours. Explore vibrant coral reefs, encounter majestic marine life, and create unforgettable memories beneath the waves. Our expert guides ensure a safe and exhilarating experience for divers of all levels. Contact us today to embark on an adventure that will leave you breathless!",
     "buttonContact": "Find Us"
+   
   },
   "about": {
     "headerAbout": "about us",
@@ -28,10 +33,7 @@
     "headerPackages": "Our Packages",
     "textPackages": "Explore our diverse tour packages for dolphin watching, snorkeling, and more in Lovina, Bali."
   },
-    "gellery": {
-    "headerGallery": "OUR GALLERY",
-    "textGallery": "Explore Our Gallery Collection"
-  },
+  
    "follow" : {
     "textFollow": "Follow Us"
   },
@@ -64,13 +66,13 @@
         "title": "Package I. Dolphin",
         "desc": "Unforgettable Dolphin Watching Experience"
       },
-      "price": 400000,
-      "added": 100000,
+      "price": 350000,
+      "added": 75000,
       "pax" : 4,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 100,000 per person will be charged for each additional participant.",
-        "etc": "Extra 100K / Person, if more than 4 people"
+        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 75,000 per person will be charged for each additional participant.",
+        "etc": "Extra 75K / Person, if more than 4 people"
       },
       "duration": {
         "title": "Duration And Activities",
@@ -90,12 +92,12 @@
         "title": "Package II. Dolphin + Swimming",
         "desc": "Swimming Experience with Dolphins"
       },
-      "price": 450000,
-      "added": 200000,
+      "price": 400000,
+      "added": 175000,
       "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200,000 per person will be charged for each additional participant."
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
       },
       "duration": {
         "title": "Duration And Activities",
@@ -115,8 +117,8 @@
         "title": "Package III. Dolphin + Snorkeling",
         "desc": "Exciting Underwater Adventure"
       },
-      "price": 450000,
-      "added": 200000,
+      "price": 400000,
+      "added": 175000,
       "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
@@ -142,11 +144,11 @@
     "desc": "Complete Exciting Sea Adventure"
   },
   "price": 500000,
-  "added": 250000,
+  "added": 225000,
   "pax" : 2,
   "personAndAdditional": {
     "tittle": "Passenger and Additional",
-    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 250,000 per person will be charged for each additional participant."
+    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 225,000 per person will be charged for each additional participant."
   },
   "duration": {
     "title": "Duration And Activities",
@@ -168,7 +170,13 @@
     "title": "Package V. Dolphin + Marine Park",
     "desc": "Exciting Sea and Marine Park Adventure"
   },
-  "price": 450000,
+  "price": 400000,
+  "added": 75000,
+  "pax" : 4,
+  "personAndAdditional": {
+    "tittle": "Passenger and Additional",
+    "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 75,000 per person will be charged for each additional participant."
+  },
   "duration": {
     "title": "Duration And Activities",
     "desc": "The duration of the trip ranges from 2 to 4 hours, depending on the activities of the dolphins and the weather. Experience an exciting adventure at sea and in the marine park."
@@ -190,7 +198,8 @@
 "pax": "Add Pax (If Needed)",
 "price": "Price",
 "date": "Date",
-"country": "Country"
+"country": "Country",
+"total" : "Total Passengers"
 },
  "reviews" :   [
   {

@@ -12,11 +12,16 @@
   "headerHome": "TUR LUMBA-LUMBA PRIBADI LOVINA",
   "heroTextHome": "Rasakan Keajaiban Laut dengan Tur Lumba-Lumba Lovina Bali.",
   "buttonHome": "HUBUNGI KAMI",
+  "galeri": {
+    "header": "GALERI KAMI",
+    "text": "Jelajahi Koleksi Galeri Kami"
+  },
   "contact": {
     "headerContactUs": "hubungi kami",
     "textContact": "Temukan petualangan menyelam di Lovina, Bali, hubungi kami sekarang!",
     "paragContact": "Benamkan diri Anda dalam keindahan dunia bawah laut Lovina dengan tur menyelam kami yang luar biasa. Jelajahi terumbu karang yang indah, temui kehidupan laut yang menakjubkan, dan ciptakan kenangan tak terlupakan di bawah ombak. Pemandu ahli kami memastikan pengalaman yang aman dan menyenangkan bagi penyelam dari semua tingkatan. Hubungi kami hari ini untuk memulai petualangan yang akan membuat Anda terengah-engah!",
     "buttonContact": "Temukan Kami"
+  
   },
   "about": {
     "headerAbout": "tentang kami",
@@ -24,10 +29,7 @@
     "p1": "Lovina Dolphin Private Tour adalah penyedia layanan tur pribadi yang berbasis di Lovina, Bali Utara. Lovina terkenal karena keindahan pariwisata lumba-lumba yang menakjubkan. Sebagai penyedia tur profesional, Lovina Private Tour menawarkan pengalaman wisata yang unik dan tak terlupakan bagi para pelanggannya.",
     "p2": "Dengan staf yang terampil dan berpengalaman, Lovina Private Tour berkomitmen untuk memberikan layanan yang terbaik kepada setiap pelanggan. Kami menyediakan berbagai paket tur yang disesuaikan dengan kebutuhan dan preferensi Anda, mulai dari tur melihat lumba-lumba hingga menjelajahi keindahan alam dan budaya Bali Utara."
   },
-    "gellery": {
-    "headerGallery": "GALERI KAMI",
-    "textGallery": "Jelajahi Koleksi Galeri Kami"
-  },
+    
    "packages": {
     "headerPackages": "Paket Kami",
     "textPackages": "Jelajahi beragam paket wisata kami untuk melihat lumba-lumba, snorkeling, dan masih banyak lagi di Lovina, Bali."
@@ -60,11 +62,11 @@
       "id": 1,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title" :"Paket I. Lumba - Lumba", "desc": "Pengalaman Tak Terlupakan Melihat Lumba-lumba"} ,
-      "price": 400000,
-      "added" : 100000,
+      "price": 350000,
+      "added" : 75000,
       "pax" : 4,
-      "personAndAdditional" : {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 100.000 per orang akan dikenakan untuk setiap peserta tambahan.",
-      "etc": "Ekstra 100K / Orang, jika lebih dari 4 orang"},
+      "personAndAdditional" : {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 75.000 per orang akan dikenakan untuk setiap peserta tambahan.",
+      "etc": "Ekstra 75K / Orang, jika lebih dari 4 orang"},
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Anda akan diajak untuk menjelajahi perairan yang luas dan menikmati momen langka melihat lumba-lumba berenang bebas di alam liar."},
       "fas": "Fasilitas",
       "facility": [
@@ -77,10 +79,10 @@
       "id": 2,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title" : "Paket II. Lumba - Lumba + Berenang", "desc": "Pengalaman Berenang Bersama Lumba-lumba"} ,
-      "price": 450000,
-      "added" : 200000,
+      "price": 400000,
+      "added" : 175000,
       "pax" : 2,
-      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp. 200.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp. 175.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Anda akan diajak untuk menikmati momen luar biasa berenang bersama lumba-lumba di perairan yang jernih dan alami."},
       "fas": "Fasilitas",
       "facility": [
@@ -93,10 +95,10 @@
       "id": 3,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket III. Lumba - Lumba + Snorkling", "desc": "Petualangan Seru di Bawah Laut"} ,
-      "price": 450000,
-      "added" : 200000,
+      "price": 400000,
+      "added" : 175000,
       "pax" : 2,
-      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 200.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 175.000 per orang akan dikenakan untuk setiap peserta tambahan. "},
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Nikmati petualangan seru di bawah laut dengan kegiatan snorkeling yang menarik."},
       "fas": "Fasilitas",
       "facility": [
@@ -112,9 +114,9 @@
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket IV. Lumba - Lumba, Berenang, Snorkling", "desc": "Petualangan Seru Lengkap di Laut"} ,
       "price": 500000,
-      "added" : 250000,
+      "added" : 225000,
       "pax" : 2,
-      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 250.000 per orang akan dikenakan untuk setiap peserta tambahan."},
+      "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 2 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 225.000 per orang akan dikenakan untuk setiap peserta tambahan."},
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 3 hingga 5 jam, tergantung pada aktivitas lumba-lumba dan cuaca. Nikmati petualangan seru lengkap di laut dengan kegiatan berenang dan snorkeling yang menarik."},
       "fas": "Fasilitas",
       "facility": [
@@ -129,7 +131,13 @@
       "id": 5,
       "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp",  "asset/fishing.jpg"],
       "name": {"title": "Paket V. Lumba Lumba + Taman Laut", "desc": "Petualangan Seru di Laut dan Taman Laut"} ,
-      "price": 450000,
+     "price": 400000,
+  "added": 75000,
+  "pax" : 4,
+   "personAndAdditional": {
+    "tittle": "Passenger and Additional",
+    "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 75,000 per person will be charged for each additional participant."
+  },
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca."},
       "fas": "Fasilitas",
       "facility": [
@@ -148,7 +156,8 @@
     "pax" : "Tambah Penumpang",
     "price": "Harga",
     "date": "Tanggal",
-    "country" : "Negara"
+    "country" : "Negara",
+    "total" : "Total Penumpang"
   },
   "reviews" :  [
   {

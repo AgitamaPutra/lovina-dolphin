@@ -76,7 +76,7 @@ export const OurServices = () => {
                       </strong>
                       <span className="text-gray-400 text-sm md:text-lg">
                         {" "}
-                        / 4 pax
+                        / {item.pax} Pax
                       </span>
                     </p>
                   </div>

@@ -30,9 +30,24 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-gray-100 text-white">
+    <div className="bg-gray-100 text-white overflow-hidden">
       <Helmet>
         <title>Our Gallery</title>
+        <meta name="keywords" content="Lovina" />
+        <meta name="keywords" content="Bali" />
+        <meta name="keywords" content="Lovina Bali" />
+        <meta name="keywords" content="Dolphin Lovina" />
+        <meta name="keywords" content="Lovina Dolphin" />
+        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
+        <meta name="keywords" content="North Bali" />
+        <meta name="keywords" content="Dolphin" />
+        <meta name="keywords" content="Lumba-lumba Bali" />
+        <meta name="keywords" content="Lumba-lumba lovina" />
+        <meta name="keywords" content="Lumba-lumba" />
+        <meta name="keywords" content="Bali Utara" />
+        <meta name="keywords" content="Snorkling" />
+        <meta name="keywords" content="Snorkling Lovina" />
+        <meta name="author" content="Awix" />
       </Helmet>
       <Hero
         header={t("galeri.header")}
@@ -41,7 +56,7 @@ const Gallery = () => {
         image={Background}
       />
 
-      <div className="relative">
+      <div className="relative ">
         <div className="flex justify-between items-center px-2 py-6 md:px-4 lg:px-6 h-52 md:h-screen">
           <button
             onClick={handlePrev}

@@ -6,6 +6,7 @@ import moment from "moment";
 import { formatPrice } from "../utills/helpers";
 import Hero from "../components/Hero";
 import Background from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
+import { Helmet } from "react-helmet";
 const { Option } = Select;
 
 export const DetailPackage = () => {
@@ -138,9 +139,26 @@ export const DetailPackage = () => {
   if (!selectedPackage) {
     return <p>{t("packageNotFound")}</p>;
   }
-  console.log(form.pax);
   return (
     <div className="bg-gray-100 min-h-screen">
+      <Helmet>
+        <title>Contact Us</title>
+        <meta name="keywords" content="Lovina" />
+        <meta name="keywords" content="Bali" />
+        <meta name="keywords" content="Lovina Bali" />
+        <meta name="keywords" content="Dolphin Lovina" />
+        <meta name="keywords" content="Lovina Dolphin" />
+        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
+        <meta name="keywords" content="North Bali" />
+        <meta name="keywords" content="Dolphin" />
+        <meta name="keywords" content="Lumba-lumba Bali" />
+        <meta name="keywords" content="Lumba-lumba lovina" />
+        <meta name="keywords" content="Lumba-lumba" />
+        <meta name="keywords" content="Bali Utara" />
+        <meta name="keywords" content="Snorkling" />
+        <meta name="keywords" content="Snorkling Lovina" />
+        <meta name="author" content="Awix" />
+      </Helmet>
       <Hero
         header={t(selectedPackage.name.title)}
         style={

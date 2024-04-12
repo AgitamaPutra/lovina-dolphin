@@ -136,7 +136,7 @@
   "pax" : 4,
    "personAndAdditional": {
     "tittle": "Passenger and Additional",
-    "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 100.000 per orang akan dikenakan untuk setiap peserta tambahan."}
+    "personAndAdditional": {"tittle" : "Penumpang dan Tambahan", "person": "Paket ini dirancang untuk 1 hingga 4 orang. Namun, jika Anda berencana untuk datang dengan rombongan yang lebih besar, tambahan biaya sebesar Rp 100.000 per orang akan dikenakan untuk setiap peserta tambahan."}  
   },
       "duration": {"title": "Durasi dan Kegiatan", "desc": "Durasi perjalanan berkisar antara 2 hingga 4 jam, tergantung pada aktivitas lumba-lumba dan cuaca."},
       "fas": "Fasilitas",

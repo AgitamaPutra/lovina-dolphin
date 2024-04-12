@@ -48,7 +48,7 @@ export const Packages = () => {
       });
     }
   }, [isVisible, controls]);
-  console.log(data.data);
+  
   return (
     <div className="bg-gradient-to-b bg-white">
       <div className="max-w-7xl w-full mx-auto px-4 py-8" ref={ref}>

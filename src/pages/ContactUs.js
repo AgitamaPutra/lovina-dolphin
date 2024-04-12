@@ -53,10 +53,26 @@ const ContactUs = () => {
     window.open("https://maps.app.goo.gl/MFzD2qVa6geoYLy38");
   };
   const { t } = useTranslation();
+  
   return (
     <div>
       <Helmet>
         <title>Contact Us</title>
+        <meta name="keywords" content="Lovina" />
+        <meta name="keywords" content="Bali" />
+        <meta name="keywords" content="Lovina Bali" />
+        <meta name="keywords" content="Dolphin Lovina" />
+        <meta name="keywords" content="Lovina Dolphin" />
+        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
+        <meta name="keywords" content="North Bali" />
+        <meta name="keywords" content="Dolphin" />
+        <meta name="keywords" content="Lumba-lumba Bali" />
+        <meta name="keywords" content="Lumba-lumba lovina" />
+        <meta name="keywords" content="Lumba-lumba" />
+        <meta name="keywords" content="Bali Utara" />
+        <meta name="keywords" content="Snorkling" />
+        <meta name="keywords" content="Snorkling Lovina" />
+        <meta name="author" content="Awix" />
       </Helmet>
       <Hero
         header={t("contact.headerContactUs")}

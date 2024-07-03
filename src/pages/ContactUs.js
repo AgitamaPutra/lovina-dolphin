@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import Image from "../asset/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg";
+import Image from "../asset/sebastien-gabriel--IMlv9Jlb24-unsplash.webp";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";

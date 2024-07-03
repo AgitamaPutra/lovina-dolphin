@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Flyer from "../asset/Poster.png";
+import Flyer from "../asset/Poster.webp";
 import { Image } from "antd";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";

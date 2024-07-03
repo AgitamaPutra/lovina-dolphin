@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { I18nContext } from "../context/I18context";
 import LanguageSelector from "./LanguageSelector";
-import Logo from "../asset/Dolphin_Logo.png";
+import Logo from "../asset/Dolphin_Logo.webp";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 

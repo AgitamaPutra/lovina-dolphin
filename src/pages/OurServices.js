@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Image from "../asset/kenny-febrian-nR1dI28cH58-unsplash.jpg";
+import Image from "../asset/kenny-febrian-nR1dI28cH58-unsplash.webp";
 import { formatPrice } from "../utills/helpers";
 import { motion } from "framer-motion";
 

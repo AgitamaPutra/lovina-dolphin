@@ -61,7 +61,7 @@
   "data": [
     {
       "id": 1,
-      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.webp", "asset/pascal-muller-WDBM22JVApk-unsplash.webp","asset/woman-with-scuba-gear-swimming-ocean.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.webp"],
       "name": {
         "title": "Package I. Dolphin",
         "desc": "Unforgettable Dolphin Watching Experience"
@@ -87,7 +87,7 @@
     },
     {
       "id": 2,
-      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.webp", "asset/pascal-muller-WDBM22JVApk-unsplash.webp","asset/woman-with-scuba-gear-swimming-ocean.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.webp"],
       "name": {
         "title": "Package II. Dolphin + Swimming",
         "desc": "Swimming Experience with Dolphins"
@@ -112,7 +112,7 @@
     },
     {
       "id": 3,
-      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
+      "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.webp", "asset/pascal-muller-WDBM22JVApk-unsplash.webp","asset/woman-with-scuba-gear-swimming-ocean.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.webp"],
       "name": {
         "title": "Package III. Dolphin + Snorkeling",
         "desc": "Exciting Underwater Adventure"
@@ -138,7 +138,7 @@
     },
     {
   "id": 4,
-  "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
+  "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.webp", "asset/pascal-muller-WDBM22JVApk-unsplash.webp","asset/woman-with-scuba-gear-swimming-ocean.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.webp"],
   "name": {
     "title": "Package IV. Dolphin, Swimming, Snorkeling",
     "desc": "Complete Exciting Sea Adventure"
@@ -165,7 +165,7 @@
 },
 {
   "id": 5,
- "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.jpg", "asset/pascal-muller-WDBM22JVApk-unsplash.jpg","asset/woman-with-scuba-gear-swimming-ocean.jpg", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.jpg"],
+ "img": [ "asset/steve-douglas-vly_LUoDwPo-unsplash.webp", "asset/pascal-muller-WDBM22JVApk-unsplash.webp","asset/woman-with-scuba-gear-swimming-ocean.webp", "asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp", "asset/weddings-art-commercial.webp", "asset/fishing.webp"],
   "name": {
     "title": "Package V. Dolphin + Marine Park",
     "desc": "Exciting Sea and Marine Park Adventure"
@@ -206,7 +206,7 @@
     "id": 1,
     "name": "Sarah Johnson",
     "rating": 5,
-    "image": "asset/profile1.jpg",
+    "image": "asset/profile1.webp",
     "review":
       "I had an amazing experience with Lovina Private Dolphin Tour. The staff was friendly, the tour was well-organized, and we had the opportunity to see dolphins up close. Highly recommended!"
   },
@@ -214,7 +214,7 @@
     "id": 2,
     "name": "Michael Anderson",
     "rating": 4,
-     "image": "asset/profile2.jpg",
+     "image": "asset/profile2.webp",
     "review":
       "Lovina Private Dolphin Tour exceeded my expectations. The guides were knowledgeable, and the boat was comfortable. The only downside was that we didn't see as many dolphins as we hoped, but overall, it was a great experience."
   },
@@ -222,7 +222,7 @@
     "id": 3,
     "name": "Jessica Smith",
     "rating": 5,
-     "image": "asset/profile3.jpg",
+     "image": "asset/profile3.webp",
     "review":
       "Lovina Private Dolphin Tour was the highlight of our trip to Bali. The sunrise dolphin watching tour was breathtaking, and the guides made sure we had a memorable experience. I would definitely do it again!"
   },
@@ -230,7 +230,7 @@
     "id": 4,
     "name": "David Thompson",
     "rating": 3,
-     "image": "asset/profile4.jpg",
+     "image": "asset/profile4.webp",
     "review":
       "Overall, Lovina Private Dolphin Tour was good, but there were some areas for improvement. The boat was a bit crowded, and we had difficulty seeing dolphins because of the number of other boats in the area."
   }

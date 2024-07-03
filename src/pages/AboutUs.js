@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
-import Image from "../asset/kadek-sutawa-RVCIXnsn3IE-unsplash.jpg";
+import Image from "../asset/kadek-sutawa-RVCIXnsn3IE-unsplash.webp";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
-import Image2 from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
+import Image2 from "../asset/pascal-muller-WDBM22JVApk-unsplash.webp";
 const AboutUs = () => {
   const controls = useAnimation();
   const ref = useRef();

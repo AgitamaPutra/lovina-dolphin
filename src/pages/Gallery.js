@@ -3,13 +3,13 @@ import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // Import icons
 import { Helmet } from "react-helmet";
-import Background from "../asset/melissa-cassar-wJEuwP4aaNU-unsplash.jpg";
-import Image1 from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
+import Background from "../asset/melissa-cassar-wJEuwP4aaNU-unsplash.webp";
+import Image1 from "../asset/woman-with-scuba-gear-swimming-ocean.webp";
 import Image2 from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp";
 import Image3 from "../asset/weddings-art-commercial.webp";
 import Image4 from "../asset/shooting-underwater.webp";
-import Image5 from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
-import Image6 from "../asset/steve-douglas-vly_LUoDwPo-unsplash.jpg";
+import Image5 from "../asset/pascal-muller-WDBM22JVApk-unsplash.webp";
+import Image6 from "../asset/steve-douglas-vly_LUoDwPo-unsplash.webp";
 import { Image } from "antd";
 
 const Gallery = () => {

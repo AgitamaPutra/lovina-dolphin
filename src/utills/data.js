@@ -1,7 +1,7 @@
 import Image from "../asset/shooting-underwater.webp";
 import Image2 from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp";
 import Image3 from "../asset/weddings-art-commercial.webp";
-import Image4 from "../asset/woman-with-scuba-gear-swimming-ocean.jpg";
+import Image4 from "../asset/woman-with-scuba-gear-swimming-ocean.webp";
 
 export const data = [
   {

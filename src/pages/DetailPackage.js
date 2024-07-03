@@ -5,7 +5,7 @@ import { Input, Select, DatePicker, Image, Form, message } from "antd";
 import moment from "moment";
 import { formatPrice } from "../utills/helpers";
 import Hero from "../components/Hero";
-import Background from "../asset/pascal-muller-WDBM22JVApk-unsplash.jpg";
+import Background from "../asset/pascal-muller-WDBM22JVApk-unsplash.webp";
 import { Helmet } from "react-helmet";
 const { Option } = Select;
 

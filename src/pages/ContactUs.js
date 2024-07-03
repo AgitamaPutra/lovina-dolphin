@@ -130,7 +130,7 @@ const ContactUs = () => {
                   onClick={handleFindUsClick}
                   className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
                 >
-                  <span className="my-auto mr-2">
+                  <span className="my-auto mr-1">
                     {" "}
                     <FaLocationDot />
                   </span>

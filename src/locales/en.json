@@ -66,13 +66,13 @@
         "title": "Package I. Dolphin",
         "desc": "Unforgettable Dolphin Watching Experience"
       },
-      "price": 350000,
-      "added": 75000,
+      "price": 450000,
+      "added": 100000,
       "pax" : 4,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 75,000 per person will be charged for each additional participant.",
-        "etc": "Extra 75K / Person, if more than 4 people"
+        "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 100.000 per person will be charged for each additional participant.",
+        "etc": "Extra 100K / Person, if more than 4 people"
       },
       "duration": {
         "title": "Duration And Activities",
@@ -92,12 +92,12 @@
         "title": "Package II. Dolphin + Swimming",
         "desc": "Swimming Experience with Dolphins"
       },
-      "price": 400000,
-      "added": 175000,
+      "price": 500000,
+      "added": 200000,
       "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 175,000 per person will be charged for each additional participant."
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200.000 per person will be charged for each additional participant."
       },
       "duration": {
         "title": "Duration And Activities",
@@ -117,12 +117,12 @@
         "title": "Package III. Dolphin + Snorkeling",
         "desc": "Exciting Underwater Adventure"
       },
-      "price": 400000,
-      "added": 175000,
+      "price": 500000,
+      "added": 200000,
       "pax" : 2,
       "personAndAdditional": {
         "tittle": "Passenger and Additional",
-        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200,000 per person will be charged for each additional participant."
+        "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 200.000 per person will be charged for each additional participant."
       },
       "duration": {
         "title": "Duration And Activities",
@@ -143,12 +143,12 @@
     "title": "Package IV. Dolphin, Swimming, Snorkeling",
     "desc": "Complete Exciting Sea Adventure"
   },
-  "price": 500000,
-  "added": 225000,
+  "price": 600000,
+  "added": 250000,
   "pax" : 2,
   "personAndAdditional": {
     "tittle": "Passenger and Additional",
-    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 225,000 per person will be charged for each additional participant."
+    "person": "This package is designed for 1 to 2 people. However, if you plan to come with a larger group, an additional fee of Rp 250.000 per person will be charged for each additional participant."
   },
   "duration": {
     "title": "Duration And Activities",
@@ -170,12 +170,12 @@
     "title": "Package V. Dolphin + Marine Park",
     "desc": "Exciting Sea and Marine Park Adventure"
   },
-  "price": 400000,
-  "added": 75000,
-  "pax" : 4,
+  "price": 100000,
+  "added": 100000,
+  "pax" : 1,
   "personAndAdditional": {
     "tittle": "Passenger and Additional",
-    "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 75,000 per person will be charged for each additional participant."
+    "person": "This package is designed for 1 to 4 people. However, if you plan to come with a larger group, an additional fee of Rp 100.000 per person will be charged for each additional participant."
   },
   "duration": {
     "title": "Duration And Activities",

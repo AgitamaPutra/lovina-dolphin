@@ -50,7 +50,7 @@ const ContactUs = () => {
     window.open(whatsappURL, "_blank");
   };
   const handleFindUsClick = () => {
-    window.open("https://maps.app.goo.gl/MFzD2qVa6geoYLy38");
+    window.open("https://maps.app.goo.gl/KWQdP8fjGBRQDTiTA");
   };
   const { t } = useTranslation();
   

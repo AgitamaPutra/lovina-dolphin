@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { FaLocationDot } from "react-icons/fa6";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -32,7 +33,9 @@ export const Footer = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
+  const handleFindUsClick = () => {
+    window.open("https://maps.app.goo.gl/KWQdP8fjGBRQDTiTA");
+  };
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,6 +62,16 @@ export const Footer = () => {
             </h3>
             <p className="text-sm">Email: awixrock@gmail.com</p>
             <p className="text-sm">Phone: +6281998348555</p>
+            <button
+              onClick={handleFindUsClick}
+              className="flex bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded mt-2"
+            >
+              <span className="my-auto mr-2 ">
+                {" "}
+                <FaLocationDot />
+              </span>
+              <span>{t("contact.buttonContact")}</span>
+            </button>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -91,6 +104,7 @@ export const Footer = () => {
             &copy; 2024 Lovina Private Dolphin Tour. All rights reserved.
           </p>
         </motion.div>
+        
       </div>
     </footer>
   );

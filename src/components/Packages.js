@@ -10,7 +10,7 @@ export const Packages = () => {
   const data = require(`../locales/${i18n.language}.json`);
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
-
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
     const refElement = ref.current;
 
@@ -23,7 +23,8 @@ export const Packages = () => {
         // When the element is in view
         if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
           setIsVisible(true);
-        } else {
+          setHasAnimated(true);
+        } else if (!hasAnimated) {
           setIsVisible(false);
         }
       }
@@ -31,7 +32,7 @@ export const Packages = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [hasAnimated]);
 
   return (
     <div className="bg-gradient-to-b bg-white">

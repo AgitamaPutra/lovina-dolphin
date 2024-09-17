@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import { Poster } from "../components/Poster";
 import AboutLovina from "../components/AboutLovina";
 import Image from "../asset/beautiful-shot-cute-dolphins-hanging-out-underwater-bimini-bahamas.webp";
+import { Video } from "../components/Video";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -22,7 +23,7 @@ export const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Home Page</title>
+        <title>Lovina Private Dolphin Tour</title>
         <meta
           name="description"
           content="Explore Lovina, Bali and experience dolphin watching tours. Discover the beauty of Lovina's dolphins and book your dolphin watching adventure today!"
@@ -58,6 +59,7 @@ export const Home = () => {
       <AboutLovina />
       <Packages />
       <Review />
+      <Video/>
     </div>
   );
 };

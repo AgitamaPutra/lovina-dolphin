@@ -1,19 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hero from "../components/Hero";
 import { useTranslation } from "react-i18next";
 import Image from "../asset/kadek-sutawa-RVCIXnsn3IE-unsplash.webp";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
 import Image2 from "../asset/pascal-muller-WDBM22JVApk-unsplash.webp";
+
 const AboutUs = () => {
   const controls = useAnimation();
   const ref = useRef();
+  const [hasAnimated, setHasAnimated] = useState(false); // State to track if animation has already occurred
 
   useEffect(() => {
     const refElement = ref.current;
 
     const onScroll = () => {
-      if (refElement) {
+      if (refElement && !hasAnimated) {
         const top = refElement.getBoundingClientRect().top;
         const bottom = refElement.getBoundingClientRect().bottom;
         const windowHeight = window.innerHeight;
@@ -25,18 +27,14 @@ const AboutUs = () => {
             y: 0,
             transition: { duration: 0.5 },
           });
-        } else {
-          controls.start({
-            opacity: 0,
-            y: 50,
-          });
+          setHasAnimated(true); // Mark that the animation has already occurred
         }
       }
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [controls]);
+  }, [controls, hasAnimated]);
 
   const { t } = useTranslation();
   return (
@@ -44,19 +42,6 @@ const AboutUs = () => {
       <Helmet>
         <title>About Us</title>
         <meta name="keywords" content="Lovina" />
-        <meta name="keywords" content="Bali" />
-        <meta name="keywords" content="Lovina Bali" />
-        <meta name="keywords" content="Dolphin Lovina" />
-        <meta name="keywords" content="Lovina Dolphin" />
-        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
-        <meta name="keywords" content="North Bali" />
-        <meta name="keywords" content="Dolphin" />
-        <meta name="keywords" content="Lumba-lumba Bali" />
-        <meta name="keywords" content="Lumba-lumba lovina" />
-        <meta name="keywords" content="Lumba-lumba" />
-        <meta name="keywords" content="Bali Utara" />
-        <meta name="keywords" content="Snorkling" />
-        <meta name="keywords" content="Snorkling Lovina" />
         <meta name="author" content="Awix" />
       </Helmet>
       <Hero

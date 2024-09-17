@@ -8,6 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 export const Footer = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const handleClickWa = () => {
     const phoneNumber = "6281998348555"; // Nomor WhatsApp
     const message = "Halo Awix, Saya ingin booking packages!"; // Pesan yang ingin dikirim
@@ -25,14 +26,15 @@ export const Footer = () => {
 
       if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
         setIsVisible(true);
-      } else {
+        setHasAnimated(true);
+      } else if (!hasAnimated) {
         setIsVisible(false);
       }
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [hasAnimated]);
   const handleFindUsClick = () => {
     window.open("https://maps.app.goo.gl/KWQdP8fjGBRQDTiTA");
   };

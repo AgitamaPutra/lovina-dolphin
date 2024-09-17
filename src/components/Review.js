@@ -7,7 +7,7 @@ const Review = () => {
   const controls = useAnimation();
   const ref = useRef();
   const [reviews, setReviews] = useState([]);
-
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,7 +40,8 @@ const Review = () => {
             y: 0,
             transition: { duration: 0.5 },
           });
-        } else {
+          setHasAnimated(true);
+        } else if (!hasAnimated) {
           controls.start({
             opacity: 0,
             y: 50,
@@ -51,7 +52,7 @@ const Review = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [controls]);
+  }, [controls, hasAnimated]);
 
   return (
     <section className="bg-gray-100 py-16" ref={ref}>

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
@@ -7,79 +7,64 @@ import Image from "../asset/sebastien-gabriel--IMlv9Jlb24-unsplash.webp";
 import { Helmet } from "react-helmet";
 import { motion, useAnimation } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
+
 const ContactUs = () => {
   const controls = useAnimation();
   const ref = useRef();
+  const [hasAnimated, setHasAnimated] = useState(false); // Track if animation has occurred
 
   useEffect(() => {
     const refElement = ref.current;
 
     const onScroll = () => {
-      if (refElement) {
+      if (refElement && !hasAnimated) {
         const top = refElement.getBoundingClientRect().top;
         const bottom = refElement.getBoundingClientRect().bottom;
         const windowHeight = window.innerHeight;
 
-        // When the element is in view
+        // Trigger animation when the element is in view
         if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
           controls.start({
             opacity: 1,
             y: 0,
             transition: { duration: 0.5 },
           });
-        } else {
-          controls.start({
-            opacity: 0,
-            y: 50,
-          });
+          setHasAnimated(true); // Prevent further animations
         }
       }
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [controls]);
+  }, [controls, hasAnimated]);
 
-  // Fungsi untuk membuka WhatsApp di halaman baru dengan nomor dan pesan yang ditentukan
+  // Function to open WhatsApp with pre-defined message
   const handleWhatsAppClick = () => {
-    const phoneNumber = "6281998348555"; // Nomor WhatsApp
-    const message = "Halo, Saya ingin booking tour!"; // Pesan yang ingin dikirim
+    const phoneNumber = "6281998348555"; // WhatsApp number
+    const message = "Halo, Saya ingin booking tour!"; // Pre-defined message
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
   };
+
   const handleFindUsClick = () => {
     window.open("https://maps.app.goo.gl/KWQdP8fjGBRQDTiTA");
   };
+
   const { t } = useTranslation();
-  
+
   return (
     <div>
       <Helmet>
         <title>Contact Us</title>
         <meta name="keywords" content="Lovina" />
-        <meta name="keywords" content="Bali" />
-        <meta name="keywords" content="Lovina Bali" />
-        <meta name="keywords" content="Dolphin Lovina" />
-        <meta name="keywords" content="Lovina Dolphin" />
-        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
-        <meta name="keywords" content="North Bali" />
-        <meta name="keywords" content="Dolphin" />
-        <meta name="keywords" content="Lumba-lumba Bali" />
-        <meta name="keywords" content="Lumba-lumba lovina" />
-        <meta name="keywords" content="Lumba-lumba" />
-        <meta name="keywords" content="Bali Utara" />
-        <meta name="keywords" content="Snorkling" />
-        <meta name="keywords" content="Snorkling Lovina" />
         <meta name="author" content="Awix" />
       </Helmet>
       <Hero
         header={t("contact.headerContactUs")}
         text={t("contact.textContact")}
-        style={
-          "font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
-        }
+        style="font-semibold text-lg md:text-2xl tracking-[5px] md:tracking-[10px]"
         image={Image}
       />
       <div className="bg-gray-100 py-16">
@@ -91,7 +76,7 @@ const ContactUs = () => {
           >
             <div>
               <MapContainer
-                center={[-8.180499578653599, 114.9865115788152]} // Koordinat Krisna Water Sports, Temukus, Buleleng
+                center={[-8.180499578653599, 114.9865115788152]} // Krisna Water Sports coordinates
                 zoom={13}
                 style={{
                   height: "400px",
@@ -111,7 +96,7 @@ const ContactUs = () => {
                 {t("contact.paragContact")}
               </p>
               <button
-                className="text-lg  mb-4 mt-4 text-start underline"
+                className="text-lg mb-4 mt-4 text-start underline"
                 onClick={handleWhatsAppClick}
               >
                 <FaPhone className="inline-block mr-4 text-2xl" />

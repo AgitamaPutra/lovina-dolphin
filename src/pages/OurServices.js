@@ -11,6 +11,7 @@ export const OurServices = () => {
   const { t, i18n } = useTranslation();
   const data = require(`../locales/${i18n.language}.json`);
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false); // Track if animation has occurred
 
   useEffect(() => {
     const onScroll = () => {
@@ -22,33 +23,21 @@ export const OurServices = () => {
 
       if (bottom > sectionTop && top < sectionBottom) {
         setIsVisible(true);
-      } else {
+        setHasAnimated(true); // Ensure the animation runs only once
+      } else if (!hasAnimated) {
         setIsVisible(false);
       }
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [hasAnimated]);
 
   return (
     <div>
       <Helmet>
         <title>Our Packages</title>
         <meta name="keywords" content="Lovina" />
-        <meta name="keywords" content="Bali" />
-        <meta name="keywords" content="Lovina Bali" />
-        <meta name="keywords" content="Dolphin Lovina" />
-        <meta name="keywords" content="Lovina Dolphin" />
-        <meta name="keywords" content="Lovina Privte Dolphin Tour" />
-        <meta name="keywords" content="North Bali" />
-        <meta name="keywords" content="Dolphin" />
-        <meta name="keywords" content="Lumba-lumba Bali" />
-        <meta name="keywords" content="Lumba-lumba lovina" />
-        <meta name="keywords" content="Lumba-lumba" />
-        <meta name="keywords" content="Bali Utara" />
-        <meta name="keywords" content="Snorkling" />
-        <meta name="keywords" content="Snorkling Lovina" />
         <meta name="author" content="Awix" />
       </Helmet>
       <Hero
@@ -69,14 +58,14 @@ export const OurServices = () => {
               key={item.id}
               className="hover:transform hover:-translate-y-4 transition duration-300 ease-in-out"
               initial={{ opacity: 0, y: 50 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              animate={isVisible || hasAnimated ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }} // Perubahan durasi animasi hover
+              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
               <Link to={`/our-packages/${item.id}`} className="block">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md">
                   <img
-                    src={require(`../${i === 0 ? item.img[0] : item.img[i]}`)} // Gunakan indeks 0 hanya untuk kartu pertama
+                    src={require(`../${i === 0 ? item.img[0] : item.img[i]}`)} // Use index 0 for first card
                     alt={item.name.title}
                     className="w-full h-48 object-cover object-center"
                   />

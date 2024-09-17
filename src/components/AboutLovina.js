@@ -10,6 +10,7 @@ const AboutLovina = () => {
   const controls = useAnimation();
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const refElement = ref.current;
@@ -23,7 +24,8 @@ const AboutLovina = () => {
         // Ketika elemen berada dalam tampilan
         if (top < windowHeight * 0.8 && bottom > windowHeight * 0.2) {
           setIsVisible(true);
-        } else {
+          setHasAnimated(true);
+        } else if (!hasAnimated) {
           setIsVisible(false);
         }
       }
@@ -31,7 +33,7 @@ const AboutLovina = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [hasAnimated]);
 
   useEffect(() => {
     if (isVisible) {

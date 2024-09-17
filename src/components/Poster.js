@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Flyer from "../asset/Poster.webp";
 import { Image } from "antd";
 import { motion, useAnimation } from "framer-motion";
@@ -8,6 +8,7 @@ export const Poster = () => {
   const controls = useAnimation();
   const ref = useRef();
   const { t } = useTranslation(); // Get translation function and i18n instance
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(() => {
     const refElement = ref.current;
     const onScroll = () => {
@@ -20,7 +21,8 @@ export const Poster = () => {
             y: 0,
             transition: { duration: 0.5 },
           });
-        } else {
+          setHasAnimated(true)
+        } else if (!hasAnimated) {
           controls.start({
             opacity: 0,
             y: 50,
@@ -31,7 +33,7 @@ export const Poster = () => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [controls]);
+  }, [controls, hasAnimated]);
   const handleClickWa = () => {
     const phoneNumber = "6281998348555"; // Nomor WhatsApp
     const message = "Halo Awix, Saya ingin booking packages promo dolphin!"; // Pesan yang ingin dikirim
